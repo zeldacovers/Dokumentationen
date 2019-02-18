@@ -1,0 +1,13 @@
+html{
+    background-color: blueviolet;
+    animation-name: hintergrundanimation;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+@keyframes hintergrundanimation{
+    0%   {background-color:rgb(0, 0, 0);}
+    25%  {background-color:rgb(88, 9, 9);} 
+    50%  {background-color:rgb(21, 1, 44);} 
+    75%  {background-color:rgb(9, 8, 68);} 
+    100% {background-color:rgb(0, 0, 0);}
+}
