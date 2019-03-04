@@ -2,8 +2,80 @@
 html{
     font-family: 'Ubuntu', sans-serif;
     background-color: #033b78;
+    animation-name: example;
+    animation-duration: 22s;
+    animation-iteration-count: infinite;
+}
+@keyframes example {
+    0%   {background-color:#033b78; }
+    25%  {background-color:rgb(5, 30, 145); }
+    50%  {background-color:rgb(9, 9, 53); }
+    75%  {background-color:rgb(2, 103, 110); }
+    100% {background-color:#033b78;}
+}
+nav{
+        display: flex;
+        justify-content: center;
+        margin: 0% 0% 9% 0%;
+        background-color: #154271;
+        
+       
+    
+}
+.hovernav {
+    padding: 4% 0%;
+    margin: 0px 30px;
+}
+.hovernav:hover{
+    background-color: #00000023;
+}
+
+#titelbild{
+    box-shadow: none;
+    width: 5%;
+    float: right;
+    margin: 1% 1% 0% 0%;
+}
+#titelbild:hover{
+    background-color: #00000023;
+}
+li{
+    margin: 0px 50px;
+    margin: 0px 5px;
+}
+header{
+    
+        box-shadow: 24px 16px 30px -1px rgba(0,0,0,0.41);
+    
+}
+a{
+    text-decoration: none;
+    color: #dfecfb;
+    font-size: 17px;
+    font-family: 'Ubuntu', sans-serif;
+}
+#titelh1{
+    display: flex;
+    justify-content: center;
+    margin-right: 0px;
+    padding-left: 6.5%;
+    padding-top: 2%;
+}
+ #titel{
+    padding-bottom: 5%;
+    background-color: #02254b;
 }
 body{
+    color: #dfecfb;
+}
+#liststyle{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0%;
+    padding: 0%;
+}
+ main{
     margin-right: 9%;
     margin-left: 9%;
     background-color: #001429;
@@ -23,6 +95,9 @@ hr{
 h1{
     margin: 0%;
 }
+h2{
+    font-size: 21px;
+}
 .style1{
     text-align: justify;
     margin-top: 5%;
@@ -30,7 +105,6 @@ h1{
 }
 #tabellemod{
     border: solid 2px white;
-
 }
 td{
     border: solid 2px white;
@@ -42,5 +116,13 @@ p{
     margin-top: 30px;
 }
  img{
-    box-shadow: 10px 9px 0px 0px rgba(17, 0, 255, 0.41);
+    box-shadow: 10px 9px 0px 0px rgba(155, 155, 155, 0.719);
+ }
+ .begriff{
+     background-color:#154271;
+     text-align: center; 
+ }
+ .erklarung{
+     background-color:#154271;  
+     text-align: center;  
  }

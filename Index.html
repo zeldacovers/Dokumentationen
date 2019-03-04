@@ -9,172 +9,204 @@
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 
+
 <body>
-    <p style="text-align: justify;">&nbsp;</p>
-    <div class="style1">
-        <h1 style="text-align: justify;">Rationale Datenbanken;</h1>
-        <hr>
-        <p style="text-align: justify;">Eine relationale Datenbank kann man sich als eine Sammlung von Tabellen (den Relationen)
-            vorstellen, in welchen Datens&auml;tze abgespeichert sind. Jede Zeile (Tupel) in einer Tabelle ist ein Datensatz
-            (record). Jedes Tupel besteht aus einer Reihe von Attributwerten (Attribute = Eigenschaften), den Spalten der
-            Tabelle. Relation heisst Beziehung. Das bedeutet das Relationales Datenbankmodell unter anderem auch auf Beziehungen
-            aufbaut mit anderen Tabellen in einer Datenbank.</p>
-    </div>
-    <div class="style1">
-        <h1 style="text-align: justify;">Datenbanken Modellieren.</h1>
-        <hr>
-        <p style="text-align: justify;">Eine Datenbank kann man gut oder schlecht modellieren, man spricht von einer guten
-            Modellierung, wenn eine Datenbank eine: &nbsp;Redundanzfreie Datenspeicherung und hohe Datenkonsistenz hat. Eine
-            redundanzfreie Datenspeicherung liegt dann vor, wenn jede Information in einer Datenbank genau einmal vorkommt.
-            Des Weiteren muss eine hohe Datenkonsistenz verfolgt werden, so dass Daten eindeutige Informationen darstellen.
-            Es gibt ein Paar neue Begriffe welche man zum Datenbank Modellieren kennen sollte:</p>
-        <table id="tabellemod">
-            <tbody>
-                <tr>
-                    <td width="353">
-                        <p>Begriff</p>
-                    </td>
-                    <td width="354">
-                        <p>Erkl&auml;rung</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td width="353">
-                        <p>Entit&auml;t (Tabellenname):</p>
-                    </td>
-                    <td width="354">
-                        <p>Eine Entit&auml;t stellt ein Objekt eines Themenkreises dar, welches Elemente mit gleichen Merkmalen
-                            beinhaltet. Beispiele f&uuml;r m&ouml;gliche Entit&auml;ten sind: Firma, Student, Kurs und Professor.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td width="353">
-                        <p>Entit&auml;tsmenge (Alle Datens&auml;tze einer Entit&auml;t):</p>
-                    </td>
-                    <td width="354">
-                        <p>Eine Entit&auml;tsmenge repr&auml;sentiert alle Datens&auml;tze, die zu einer Entit&auml;t geh&ouml;ren.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td width="353">
-                        <p>Relation (Tabelle):</p>
-                    </td>
-                    <td width="354">
-                        <p>Eine Relation umfasst eine Entit&auml;t inklusive der dazugeh&ouml;rigen Entit&auml;tsmenge. Eine
-                            komplette Relation besteht aus einer Entit&auml;tsbezeichnung, deren Attributen und Tupeln.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td width="353">
-                        <p>Tupel (Datensatz):</p>
-                    </td>
-                    <td width="354">
-                        <p>Ein Tupel repr&auml;sentiert alle Merkmalswerte einer Entit&auml;t einer Entit&auml;tsmenge. Alle
-                            Tupel einer Entit&auml;t bilden die Entit&auml;tsmenge.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td width="353">
-                        <p>Attribut (Spaltenname):</p>
-                    </td>
-                    <td width="354">
-                        <p>Ein Attribut beschreibt genau ein Merkmal eines Tupels in einer Entit&auml;tsmenge, zum Beispiel
-                            den Namen eines Kunden.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td width="353">
-                        <p>Attributwert (Wert)</p>
-                    </td>
-                    <td width="354">
-                        <p>Der Attributwert repr&auml;sentiert den Wert, den ein Attribut in einem Tupel annehmen kann, zum
-                            Beispiel: Attribut =&gt; Name = &bdquo;Meier&ldquo; &lt;= Attributwert</p>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <p style="text-align: justify;">Wichtiger Hinweis zum Begriff Relation und Tabelle:</p>
-        <p style="text-align: justify;">Heutzutage werden die Begriffe Relation und Tabelle gleichgesetzt. Das ist leider
-            sehr problematisch, da das Wort &bdquo;Relation&ldquo; im Englischen &bdquo;Beziehung&ldquo; bedeutet. Eine Beziehung
-            hat aber in den Datenbank-Grundlagen eine ganz andere Bedeutung und sagt aus, in welcher Abh&auml;ngigkeit zwei
-            Tabellen zueinanderstehen.</p>
-        <p style="text-align: justify;">Die Grundelemente einer Datenbankmodellierung bilden: Entit&auml;ten, Beziehungen
-            und Attribute. Diese werden grafisch folgenderma&szlig;en dargestellt:</p>
-        <img src="bilder/123.jpg" alt="Modell1">
-        <p style="text-align: justify;">Um was genau es sich bei diesen Elementen handelt, kl&auml;ren die folgenden Punkte:</p>
-        <ul style="text-align: justify;">
-            <li>Eine Entit&auml;t ist ein individuell identifizierbares Objekt der Wirklichkeit.</li>
-            <li>Eine Beziehung ist eine Verkn&uuml;pfung / Zusammenhang zwischen zwei oder mehreren Entit&auml;ten.</li>
-            <li>Ein Attribut ist eine Eigenschaft, die im Kontext zu einer Entit&auml;t steht.</li>
-        </ul>
-        <p style="text-align: justify;">Das folgende Beispiel eines Datenbank-Modells soll zeigen, wie leicht ein Modell
-            anhand eines realen Beispiels zu erstellen ist:</p>
-        <img src="bilder/123123.jpg" alt="Modell2">
-        <p style="text-align: justify;">Erkl&auml;rung zum Datenbank-Modell: Ein Mitarbeiter hat einen Namen. Ein Projekt
-            hat einen Namen, ein Datum und ein Budget. Ein Mitarbeiter kann mehrere Projekte leiten, aber nur ein Projekt
-            kann von genau einem Mitarbeiter geleitet werden.</p>
-    </div>
-    <div class="style1">
-        <h1 style="text-align: justify;">Prim&auml;rschl&uuml;ssel (primary key)</h1>
-        <hr>
-        <p style="text-align: justify;">Der Prim&auml;rschl&uuml;ssel kommt in relationalen Datenbanken zum Einsatz und wird
-            zur eindeutigen Identifizierung eines Datensatzes verwendet. In einer normalisierten Datenbank besitzen alle
-            Tabellen einen Prim&auml;rschl&uuml;ssel. Der Wert eines Prim&auml;rschl&uuml;ssels muss in einer Tabelle einmalig
-            sein, da er jeden Datensatz eindeutig kennzeichnet. Des Weiteren wird er h&auml;ufig als Datenbank-Index verwendet,
-            um die Daten auf der Festplatte abzulegen. Es handelt es sich um einen eindeutigen Schl&uuml;ssel, wenn eine
-            Spalte der Tabelle gespeichert wird. Als Spalte kann ein Attribut des Datensatzes verwendet werden, das f&uuml;r
-            jeden Eintrag in der Tabelle einen einmaligen Wert annimmt. Als eindeutiges Prim&auml;rschl&uuml;sselattribut
-            k&ouml;nnte beispielsweise die Sozialversicherungsnummer in einer Mitarbeitertabelle verwendet werden.</p>
-    </div>
-    <div class="style1">
-        <h1 style="text-align: justify;">Fremdschl&uuml;ssel (Foreign Key)</h1>
-        <hr>
-        <p style="text-align: justify;">Der Fremdschl&uuml;ssel kann Bestandteil einer Tabelle in einer relationalen Datenbank
-            sein. Dabei handelt es sich um eine Schl&uuml;sselspalte, die auf einen Prim&auml;rschl&uuml;ssel einer anderen
-            oder aber derselben Tabelle verweist. Es kann sich dabei um einen einfachen oder zusammengesetzten Schl&uuml;ssel
-            handeln. Das h&auml;ngt davon ab, wie der Prim&auml;rschl&uuml;ssel der referenzierten Tabelle aufgebaut ist.</p>
-        <p style="text-align: justify;"><em>was f&uuml;r Fremdschl&uuml;sselarten gibt es?</em></p>
-        <p style="text-align: justify;">Aufgrund der referentiellen Integrit&auml;t kann der Fremdschl&uuml;ssel nur Werte
-            annehmen, die in der Referenztabelle vorhanden sind. Zudem kann eine beliebige Anzahl von Datens&auml;tzen den
-            gleichen Fremdschl&uuml;sselwert aufweisen.
-        </p>
-        <p style="text-align: justify;">Beispiel f&uuml;r den Einsatz eines Fremdschl&uuml;ssels:</p>
-        <p style="text-align: justify;">In einer normalisierten Tabelle die Kontakte verwaltet, kann beispielsweise zu einer
-            Person ein Unternehmen referenziert werden. In der Tabelle &bdquo;Ansprechpartner&ldquo; wird &bdquo;Colin Meier&ldquo;
-            und ihre Telefonnummer angelegt. Ihr Unternehmen wird aus der Tabelle &bdquo;Unternehmen&ldquo; referenziert,
-            das w&auml;re dann beispielsweise die &bdquo;ABC GmbH&ldquo;. &Uuml;ber diese Referenz kann bei einer Abfrage
-            die Anschrift und andere Fakten zum Unternehmen aus der Tabelle &bdquo;Unternehmen&ldquo; abgerufen werden.</p>
-        <h1 style="text-align: justify;">Normalisierung von Datenbanken.</h1>
-        <p style="text-align: justify;">Unter Normalisierung eines relationalen Datenbankmodells versteht man die Aufteilung
-            von Attributen in mehrere Relationen (Tabellen) mithilfe der Normalisierungsregeln und deren Normalformen, sodass
-            eine Form entsteht, die keine vermeidbaren Redundanzen mehr enth&auml;lt.</p>
-        <p style="text-align: justify;"><em>&bdquo;Warum wird eine Normalisierung durchgef&uuml;hrt?&ldquo;</em></p>
-        <p style="text-align: justify;">Ziel der Normalisierung ist eine redundanzfreie Datenspeicherung zu erstellen. Redundanzfrei
-            bedeutet, dass Daten entfernt werden k&ouml;nnen, ohne dass es zu Informationsverlusten kommt. Weiterhin soll
-            die Normalisierung Anomalien entfernen. Im Normalisierungsprozess gibt es f&uuml;nf Normalformen, welche im Folgenden
-            genauer erkl&auml;rt werden. In der Datenbankentwicklung ist die Dritte Normalform oft ausreichend, um die perfekte
-            Balance aus Redundanz, Performance und Flexibilit&auml;t f&uuml;r eine Datenbank zu gew&auml;hrleisten. Nat&uuml;rlich
-            gibt es auch Sonderf&auml;lle, z.B. im wissenschaftlichen Bereich, wo eine Datenbank bis zur 5. Normalform normalisiert
-            werden kann bzw. muss.</p>
-        <p style="text-align: justify;">Ziele der Datenbank-Normalisierung:</p>
-        <ul style="text-align: justify;">
-            <li>Beseitigung von Redundanzen</li>
-            <li>Vermeidung von Anomalien (funktionelle und transitive Abh&auml;ngigkeiten)</li>
-            <li>Erstellung eines klar strukturierten Datenbankmodells</li>
-        </ul>
-        <p style="text-align: justify;">&nbsp;</p>
-    </div>
-    <div class="style1">
-        <h1 style="text-align: justify;">DDL (Data Definition Language)</h1>
-        <hr>
-        <p style="text-align: justify;">Die Structured Query Language (SQL) zerf&auml;llt grob in zwei Teile:</p>
-        <ul style="text-align: justify;">
-            <li>Befehle, mit denen Sie in einem Datenbankmanagementsystem Datenbankobjekte, wie Datenbanken, Tabellen, Spalten
-                und Indizes, erstellen, &auml;ndern bzw. l&ouml;schen, sind in der DDL (Data Definition Language) zusammengefasst.
-                Der DDL widmen wir uns in diesem Abschnitt.</li>
-            <li>Befehle, mit denen Sie Daten in Tabellen einf&uuml;gen, bearbeiten und suchen, geh&ouml;ren zur DML (Data
-                Manipulation Language), mit der wir uns im n&auml;chsten Abschnitt besch&auml;ftigen.</li>
-        </ul>
+    <header>
+        <div id="titel">
+            <a href="index.html"><img id="titelbild" src="bilder/home.png" alt="home" id="home"></a>
+            <h1 id="titelh1">Lerndokumentationen</h1>
+        </div>
+        <nav id="nav">
+            <ul id="liststyle">
+                <div class="hovernav">
+                    <li><a href="index.html">SQL Datenbanken</a></li>
+                </div>
+                <div class="hovernav">
+                    <li><a href="https://zeldacovers.github.io/dokumentation101/">HTML/CSS</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <div id="flex">
+        <main>
+            <p style="text-align: justify;">&nbsp;</p>
+            <div class="style1">
+                <h1 style="text-align: justify;">Rationale Datenbanken;</h1>
+                <hr>
+                <p style="text-align: justify;">Eine relationale Datenbank kann man sich als eine Sammlung von Tabellen (den
+                    Relationen) vorstellen, in welchen Datens&auml;tze abgespeichert sind. Jede Zeile (Tupel) in einer Tabelle
+                    ist ein Datensatz (record). Jedes Tupel besteht aus einer Reihe von Attributwerten (Attribute = Eigenschaften),
+                    den Spalten der Tabelle. Relation heisst Beziehung. Das bedeutet das Relationales Datenbankmodell unter
+                    anderem auch auf Beziehungen aufbaut mit anderen Tabellen in einer Datenbank.</p>
+            </div>
+            <div class="style1">
+                <h1 style="text-align: justify;">Datenbanken Modellieren.</h1>
+                <hr>
+                <p style="text-align: justify;">Eine Datenbank kann man gut oder schlecht modellieren, man spricht von einer
+                    guten Modellierung, wenn eine Datenbank eine: &nbsp;Redundanzfreie Datenspeicherung und hohe Datenkonsistenz
+                    hat. Eine redundanzfreie Datenspeicherung liegt dann vor, wenn jede Information in einer Datenbank genau
+                    einmal vorkommt. Des Weiteren muss eine hohe Datenkonsistenz verfolgt werden, so dass Daten eindeutige
+                    Informationen darstellen. Es gibt ein Paar neue Begriffe welche man zum Datenbank Modellieren kennen
+                    sollte:</p>
+                <table id="tabellemod">
+                    <tbody>
+                        <tr>
+                            <td class="begriff" width="353">
+                                <h2>Begriff</h2>
+                            </td>
+                            <td class="erklarung" width="354">
+                                <h2>Erkl&auml;rung</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="353">
+                                <p>Entit&auml;t (Tabellenname):</p>
+                            </td>
+                            <td width="354">
+                                <p>Eine Entit&auml;t stellt ein Objekt eines Themenkreises dar, welches Elemente mit gleichen
+                                    Merkmalen beinhaltet. Beispiele f&uuml;r m&ouml;gliche Entit&auml;ten sind: Firma, Student,
+                                    Kurs und Professor.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="353">
+                                <p>Entit&auml;tsmenge (Alle Datens&auml;tze einer Entit&auml;t):</p>
+                            </td>
+                            <td width="354">
+                                <p>Eine Entit&auml;tsmenge repr&auml;sentiert alle Datens&auml;tze, die zu einer Entit&auml;t
+                                    geh&ouml;ren.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="353">
+                                <p>Relation (Tabelle):</p>
+                            </td>
+                            <td width="354">
+                                <p>Eine Relation umfasst eine Entit&auml;t inklusive der dazugeh&ouml;rigen Entit&auml;tsmenge.
+                                    Eine komplette Relation besteht aus einer Entit&auml;tsbezeichnung, deren Attributen
+                                    und Tupeln.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="353">
+                                <p>Tupel (Datensatz):</p>
+                            </td>
+                            <td width="354">
+                                <p>Ein Tupel repr&auml;sentiert alle Merkmalswerte einer Entit&auml;t einer Entit&auml;tsmenge.
+                                    Alle Tupel einer Entit&auml;t bilden die Entit&auml;tsmenge.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="353">
+                                <p>Attribut (Spaltenname):</p>
+                            </td>
+                            <td width="354">
+                                <p>Ein Attribut beschreibt genau ein Merkmal eines Tupels in einer Entit&auml;tsmenge, zum
+                                    Beispiel den Namen eines Kunden.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="353">
+                                <p>Attributwert (Wert)</p>
+                            </td>
+                            <td width="354">
+                                <p>Der Attributwert repr&auml;sentiert den Wert, den ein Attribut in einem Tupel annehmen
+                                    kann, zum Beispiel: Attribut =&gt; Name = &bdquo;Meier&ldquo; &lt;= Attributwert</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p style="text-align: justify;">Wichtiger Hinweis zum Begriff Relation und Tabelle:</p>
+                <p style="text-align: justify;">Heutzutage werden die Begriffe Relation und Tabelle gleichgesetzt. Das ist
+                    leider sehr problematisch, da das Wort &bdquo;Relation&ldquo; im Englischen &bdquo;Beziehung&ldquo; bedeutet.
+                    Eine Beziehung hat aber in den Datenbank-Grundlagen eine ganz andere Bedeutung und sagt aus, in welcher
+                    Abh&auml;ngigkeit zwei Tabellen zueinanderstehen.</p>
+                <p style="text-align: justify;">Die Grundelemente einer Datenbankmodellierung bilden: Entit&auml;ten, Beziehungen
+                    und Attribute. Diese werden grafisch folgenderma&szlig;en dargestellt:</p>
+                <img src="bilder/123.jpg" alt="Modell1">
+                <p style="text-align: justify;">Um was genau es sich bei diesen Elementen handelt, kl&auml;ren die folgenden
+                    Punkte:</p>
+                <ul style="text-align: justify;">
+                    <li>Eine Entit&auml;t ist ein individuell identifizierbares Objekt der Wirklichkeit.</li>
+                    <li>Eine Beziehung ist eine Verkn&uuml;pfung / Zusammenhang zwischen zwei oder mehreren Entit&auml;ten.</li>
+                    <li>Ein Attribut ist eine Eigenschaft, die im Kontext zu einer Entit&auml;t steht.</li>
+                </ul>
+                <p style="text-align: justify;">Das folgende Beispiel eines Datenbank-Modells soll zeigen, wie leicht ein
+                    Modell anhand eines realen Beispiels zu erstellen ist:</p>
+                <img src="bilder/123123.jpg" alt="Modell2">
+                <p style="text-align: justify;">Erkl&auml;rung zum Datenbank-Modell: Ein Mitarbeiter hat einen Namen. Ein
+                    Projekt hat einen Namen, ein Datum und ein Budget. Ein Mitarbeiter kann mehrere Projekte leiten, aber
+                    nur ein Projekt kann von genau einem Mitarbeiter geleitet werden.</p>
+            </div>
+            <div class="style1">
+                <h1 style="text-align: justify;">Prim&auml;rschl&uuml;ssel (primary key)</h1>
+                <hr>
+                <p style="text-align: justify;">Der Prim&auml;rschl&uuml;ssel kommt in relationalen Datenbanken zum Einsatz
+                    und wird zur eindeutigen Identifizierung eines Datensatzes verwendet. In einer normalisierten Datenbank
+                    besitzen alle Tabellen einen Prim&auml;rschl&uuml;ssel. Der Wert eines Prim&auml;rschl&uuml;ssels muss
+                    in einer Tabelle einmalig sein, da er jeden Datensatz eindeutig kennzeichnet. Des Weiteren wird er h&auml;ufig
+                    als Datenbank-Index verwendet, um die Daten auf der Festplatte abzulegen. Es handelt es sich um einen
+                    eindeutigen Schl&uuml;ssel, wenn eine Spalte der Tabelle gespeichert wird. Als Spalte kann ein Attribut
+                    des Datensatzes verwendet werden, das f&uuml;r jeden Eintrag in der Tabelle einen einmaligen Wert annimmt.
+                    Als eindeutiges Prim&auml;rschl&uuml;sselattribut k&ouml;nnte beispielsweise die Sozialversicherungsnummer
+                    in einer Mitarbeitertabelle verwendet werden.</p>
+            </div>
+            <div class="style1">
+                <h1 style="text-align: justify;">Fremdschl&uuml;ssel (Foreign Key)</h1>
+                <hr>
+                <p style="text-align: justify;">Der Fremdschl&uuml;ssel kann Bestandteil einer Tabelle in einer relationalen
+                    Datenbank sein. Dabei handelt es sich um eine Schl&uuml;sselspalte, die auf einen Prim&auml;rschl&uuml;ssel
+                    einer anderen oder aber derselben Tabelle verweist. Es kann sich dabei um einen einfachen oder zusammengesetzten
+                    Schl&uuml;ssel handeln. Das h&auml;ngt davon ab, wie der Prim&auml;rschl&uuml;ssel der referenzierten
+                    Tabelle aufgebaut ist.</p>
+                <p style="text-align: justify;"><em>was f&uuml;r Fremdschl&uuml;sselarten gibt es?</em></p>
+                <p style="text-align: justify;">Aufgrund der referentiellen Integrit&auml;t kann der Fremdschl&uuml;ssel
+                    nur Werte annehmen, die in der Referenztabelle vorhanden sind. Zudem kann eine beliebige Anzahl von Datens&auml;tzen
+                    den gleichen Fremdschl&uuml;sselwert aufweisen.
+                </p>
+                <p style="text-align: justify;">Beispiel f&uuml;r den Einsatz eines Fremdschl&uuml;ssels:</p>
+                <p style="text-align: justify;">In einer normalisierten Tabelle die Kontakte verwaltet, kann beispielsweise
+                    zu einer Person ein Unternehmen referenziert werden. In der Tabelle &bdquo;Ansprechpartner&ldquo; wird
+                    &bdquo;Colin Meier&ldquo; und ihre Telefonnummer angelegt. Ihr Unternehmen wird aus der Tabelle &bdquo;Unternehmen&ldquo;
+                    referenziert, das w&auml;re dann beispielsweise die &bdquo;ABC GmbH&ldquo;. &Uuml;ber diese Referenz
+                    kann bei einer Abfrage die Anschrift und andere Fakten zum Unternehmen aus der Tabelle &bdquo;Unternehmen&ldquo;
+                    abgerufen werden.</p>
+            </div>
+            <div class="style1">
+                <h1 style="text-align: justify;">Normalisierung von Datenbanken.</h1>
+                <hr>
+                <p style="text-align: justify;">Unter Normalisierung eines relationalen Datenbankmodells versteht man die
+                    Aufteilung von Attributen in mehrere Relationen (Tabellen) mithilfe der Normalisierungsregeln und deren
+                    Normalformen, sodass eine Form entsteht, die keine vermeidbaren Redundanzen mehr enth&auml;lt.</p>
+                <p style="text-align: justify;"><em>&bdquo;Warum wird eine Normalisierung durchgef&uuml;hrt?&ldquo;</em></p>
+                <p style="text-align: justify;">Ziel der Normalisierung ist eine redundanzfreie Datenspeicherung zu erstellen.
+                    Redundanzfrei bedeutet, dass Daten entfernt werden k&ouml;nnen, ohne dass es zu Informationsverlusten
+                    kommt. Weiterhin soll die Normalisierung Anomalien entfernen. Im Normalisierungsprozess gibt es f&uuml;nf
+                    Normalformen, welche im Folgenden genauer erkl&auml;rt werden. In der Datenbankentwicklung ist die Dritte
+                    Normalform oft ausreichend, um die perfekte Balance aus Redundanz, Performance und Flexibilit&auml;t
+                    f&uuml;r eine Datenbank zu gew&auml;hrleisten. Nat&uuml;rlich gibt es auch Sonderf&auml;lle, z.B. im
+                    wissenschaftlichen Bereich, wo eine Datenbank bis zur 5. Normalform normalisiert werden kann bzw. muss.</p>
+                <p style="text-align: justify;">Ziele der Datenbank-Normalisierung:</p>
+                <ul style="text-align: justify;">
+                    <li>Beseitigung von Redundanzen</li>
+                    <li>Vermeidung von Anomalien (funktionelle und transitive Abh&auml;ngigkeiten)</li>
+                    <li>Erstellung eines klar strukturierten Datenbankmodells</li>
+                </ul>
+            </div>
+
+            <div class="style1">
+                <h1 style="text-align: justify;">DDL (Data Definition Language)</h1>
+                <hr>
+                <p style="text-align: justify;">Die Structured Query Language (SQL) zerf&auml;llt grob in zwei Teile:</p>
+                <ul style="text-align: justify;">
+                    <li>Befehle, mit denen Sie in einem Datenbankmanagementsystem Datenbankobjekte, wie Datenbanken, Tabellen,
+                        Spalten und Indizes, erstellen, &auml;ndern bzw. l&ouml;schen, sind in der DDL (Data Definition Language)
+                        zusammengefasst. Der DDL widmen wir uns in diesem Abschnitt.</li>
+                    <li>Befehle, mit denen Sie Daten in Tabellen einf&uuml;gen, bearbeiten und suchen, geh&ouml;ren zur DML
+                        (Data Manipulation Language), mit der wir uns im n&auml;chsten Abschnitt besch&auml;ftigen.</li>
+                </ul>
+            </div>
+        </main>
     </div>
 </body>
 
