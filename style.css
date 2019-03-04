@@ -1,40 +1,46 @@
-@import url('https://fonts.googleapis.com/css?family=Lilita+One');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
 html{
-    background-color: blueviolet;
-    animation-name: hintergrundanimation;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #033b78;
 }
-header{
-    padding-top: 4.5%;
+body{
+    margin-right: 9%;
+    margin-left: 9%;
+    background-color: #001429;
+    box-shadow: 7px 0px 86px 3px rgba(0,0,0,0.7);
+    padding-left: 11%;
+    padding-right: 11%;
+    padding-bottom: 3%;
+    color: #dfecfb;
+}
+hr{
+    background: rgb(255, 255, 255);
+    border: none;
+    color: rgb(255, 255, 255);
+    height: 2px;
+    width: 100%;
 }
 h1{
-    font-family: 'Lilita One', cursive;
-    font-size: 300%;
-    text-align: center;
-    color: white;
-    text-shadow: 5px 5px 5px gray;
-    margin: 0;
+    margin: 0%;
 }
-#htmlcss{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.style1{
+    text-align: justify;
+    margin-top: 5%;
+    margin-bottom: 15%;
 }
-#bildhtml{
-    margin: 5% 30% 0% 0%;
-}
-#bildsql{
-    margin: 5% 4% 0% 15%;
-}
-img:hover{
-background-color: rgba(0,0,0,0.6)
-}
+#tabellemod{
+    border: solid 2px white;
 
-@keyframes hintergrundanimation{
-    0%   {background-color:rgb(34, 11, 11);}
-    25%  {background-color:rgb(48, 48, 48);} 
-    50%  {background-color:rgb(21, 1, 44);} 
-    75%  {background-color:rgb(9, 8, 68);} 
-    100% {background-color:rgb(34, 11, 11);}
 }
+td{
+    border: solid 2px white;
+}
+tr{
+    border: solid 2px white;
+}
+p{
+    margin-top: 30px;
+}
+ img{
+    box-shadow: 10px 9px 0px 0px rgba(17, 0, 255, 0.41);
+ }
