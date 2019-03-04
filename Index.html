@@ -1,20 +1,423 @@
-<!DOCTYPE html>
-<html lang="de-ch">
-<head>
+<html lang="de-DE" class="wf-ubuntu-n4-active wf-ubuntu-i4-active wf-ubuntu-n7-active wf-ubuntu-i7-active wf-active"><head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Alle Dokumentationen</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
-</head>
-<header>
-    <h1>Lerndokumentationen</h1>
-</header>
-<body>
-<div id="htmlcss">
-<img src="bilder/html css 2.png" alt="html, css" width="20%" id="bildhtml">
-
- <img src="bilder/sql3.png" alt=" mysql" width="12%" id="bildsql" >
-</div>
-</body>
-</html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    
+    <title>SQL Datenbanken</title>
+    <script src="https://s0.wp.com/wp-content/plugins/custom-fonts/js/webfont.js" type="text/javascript" async=""></script><script type="text/javascript">
+      WebFontConfig = {"google":{"families":["Ubuntu:r:latin,latin-ext","Ubuntu:r,i,b,bi:latin,latin-ext"]}};
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = 'https://s0.wp.com/wp-content/plugins/custom-fonts/js/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+        })();
+    </script><style id="jetpack-custom-fonts-css">.wf-active code, .wf-active kbd, .wf-active pre, .wf-active samp{font-family:"Ubuntu",sans-serif}.wf-active body{font-family:"Ubuntu",sans-serif}.wf-active button, .wf-active input, .wf-active select{font-family:"Ubuntu",sans-serif}.wf-active textarea{font-family:"Ubuntu",sans-serif}.wf-active blockquote{font-family:"Ubuntu",sans-serif}.wf-active code, .wf-active kbd, .wf-active pre, .wf-active tt, .wf-active var{font-family:"Ubuntu",sans-serif}.wf-active .button, .wf-active .more-link, .wf-active button:not(.menu-toggle), .wf-active input[type="button"], .wf-active input[type="reset"], .wf-active input[type="submit"], .wf-active .posts-navigation .nav-links a, .wf-active #content #infinite-handle span button{font-family:"Ubuntu",sans-serif}.wf-active input[type="email"], .wf-active input[type="password"], .wf-active input[type="search"], .wf-active input[type="text"], .wf-active input[type="url"], .wf-active textarea{font-family:"Ubuntu",sans-serif}.wf-active .post-navigation{font-family:"Ubuntu",sans-serif}.wf-active .main-navigation{font-family:"Ubuntu",sans-serif}.wf-active .entry-content, .wf-active .entry-summary, .wf-active .page-content{font-family:"Ubuntu",sans-serif}.wf-active .entry-content .subtitle{font-family:"Ubuntu",sans-serif}.wf-active #comments{font-family:"Ubuntu",sans-serif}.wf-active .comment-form label{font-family:"Ubuntu",sans-serif}.wf-active .comment-form span.required{font-family:"Ubuntu",sans-serif}.wf-active .widget_recent_entries span.post-date{font-family:"Ubuntu",sans-serif}.wf-active .site-description{font-family:"Ubuntu",sans-serif}.wf-active .site-posted-on time{font-family:"Ubuntu",sans-serif}.wf-active .page-header:not(.page-header-light) .taxonomy-description{font-family:"Ubuntu",sans-serif}.wf-active .light-text{font-family:"Ubuntu",sans-serif}.wf-active .site-info{font-family:"Ubuntu",sans-serif}.wf-active .sticky-label{font-family:"Ubuntu",sans-serif}.wf-active .post-details, .wf-active .post-details a{font-family:"Ubuntu",sans-serif}.wf-active .page-links{font-family:"Ubuntu",sans-serif}.wf-active .post-edit-link{font-family:"Ubuntu",sans-serif}.wf-active .post-author-card .author-description{font-family:"Ubuntu",sans-serif}.wf-active #tinymce h1, .wf-active #tinymce h2, .wf-active #tinymce h3, .wf-active #tinymce h4, .wf-active #tinymce h5, .wf-active #tinymce h6, .wf-active .comment-content h1, .wf-active .comment-content h2, .wf-active .comment-content h3, .wf-active .comment-content h4, .wf-active .comment-content h5, .wf-active .comment-content h6, .wf-active .entry-content h1, .wf-active .entry-content h2, .wf-active .entry-content h3, .wf-active .entry-content h4, .wf-active .entry-content h5, .wf-active .entry-content h6, .wf-active .entry-summary h1, .wf-active .entry-summary h2, .wf-active .entry-summary h3, .wf-active .entry-summary h4, .wf-active .entry-summary h5, .wf-active .entry-summary h6, .wf-active .widget_text h1, .wf-active .widget_text h2, .wf-active .widget_text h3, .wf-active .widget_text h4, .wf-active .widget_text h5, .wf-active .widget_text h6{font-family:"Ubuntu",sans-serif;font-style:normal;font-weight:400}.wf-active h1{font-size:75.2px;font-style:normal;font-weight:400}.wf-active h2{font-size:49.6px;font-style:normal;font-weight:400}.wf-active h3{font-size:38.4px;font-style:normal;font-weight:400}.wf-active h4{font-size:32px;font-style:normal;font-weight:400}.wf-active h5{font-size:24px;font-style:normal;font-weight:400}.wf-active h6{font-size:22.4px;font-style:normal;font-weight:400}.wf-active blockquote h1, .wf-active blockquote h2, .wf-active blockquote h3, .wf-active blockquote h4{font-family:"Ubuntu",sans-serif;font-weight:400;font-style:normal}.wf-active div#jp-relatedposts h3.jp-relatedposts-headline em{font-family:"Ubuntu",sans-serif;font-style:normal;font-weight:400}.wf-active .comment-reply-title, .wf-active .comments-title{font-family:"Ubuntu",sans-serif;font-size:41.6px;font-weight:400;font-style:normal}.wf-active .image-post-title{font-family:"Ubuntu",sans-serif;font-size:25.6px;font-weight:400;font-style:normal}.wf-active .page-header:not(.page-header-light) h1{font-size:65.6px;font-style:normal;font-weight:400}.wf-active .entry-title{font-family:"Ubuntu",sans-serif;font-size:3.52em;font-style:normal;font-weight:400}.wf-active #post-cover-image .cover-meta .single-post-title{font-family:"Ubuntu",sans-serif;font-size:67.2px;font-style:normal;font-weight:400}.wf-active #hero-header .site-title{font-family:"Ubuntu",sans-serif;font-size:65.6px;font-style:normal;font-weight:400}.wf-active .site-header .site-title{font-size:30.4px;font-style:normal;font-weight:400}.wf-active .site-header .site-description{font-size:20.8px;font-style:normal;font-weight:400}</style>
+    <link rel="dns-prefetch" href="//s2.wp.com">
+    <link rel="dns-prefetch" href="//s1.wp.com">
+    <link rel="dns-prefetch" href="//s0.wp.com">
+    <link rel="alternate" type="application/rss+xml" title="SQL Datenbanken » Feed" href="https://lerndokumentationen.wordpress.com/feed/">
+    <link rel="alternate" type="application/rss+xml" title="SQL Datenbanken » Kommentar-Feed" href="https://lerndokumentationen.wordpress.com/comments/feed/">
+        <script type="text/javascript">
+            /* <![CDATA[ */
+            function addLoadEvent(func) {
+                var oldonload = window.onload;
+                if (typeof window.onload != 'function') {
+                    window.onload = func;
+                } else {
+                    window.onload = function () {
+                        oldonload();
+                        func();
+                    }
+                }
+            }
+            /* ]]> */
+        </script>
+                <script type="text/javascript">
+                window._wpemojiSettings = {"baseUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/s0.wp.com\/wp-includes\/js\/wp-emoji-release.min.js?m=1550249335h&ver=5.1"}};
+                !function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+            </script><script src="https://s0.wp.com/wp-includes/js/wp-emoji-release.min.js?m=1550249335h&amp;ver=5.1" type="text/javascript" defer=""></script>
+            <style type="text/css">
+    img.wp-smiley,
+    img.emoji {
+        display: inline !important;
+        border: none !important;
+        box-shadow: none !important;
+        height: 1em !important;
+        width: 1em !important;
+        margin: 0 .07em !important;
+        vertical-align: -0.1em !important;
+        background: none !important;
+        padding: 0 !important;
+    }
+    </style>
+        <link rel="stylesheet" id="all-css-0-1" href="https://s0.wp.com/_static/??-eJydU+1OwzAMfCG8MKYi+IF4ljQ1rdd8KXFV+va4DRsbHRXan8gX+3zxuVVjBBM8o2flBoh2aMlnNUYTHGRHFqdfaGdyflAXtNqG9kx0OvXI5FuodVJSen2zIl9oWuoxqyNy1KaHBZ3LyRs7NJKeOzaUF9Wlqk46TSrzZHHnyG8JmJBQ7l3UPFc4bEijRSdlW7SRmha5SJcYGD83KS4+n4TmsJOB1r6t7K7rmDBnkNPR4IA7edsmr0WPiSTxR7jilpYqDrUi32BEOTyDYEu5wwRP31beQZz9WbZyl6xsuEjDYsZ/FoKDZENPCFaPitFFq1lkbk9wo0EOhrSF4tolKGRSPnBJnoLtZQSQ8TVT8FcAPqymzU8/4fwTSdguLv7AmfTu3vZV9bh/PbxUh+MXmuBkSA==?cssminify=yes" type="text/css" media="all">
+    <style id="independent-publisher-2-style-inline-css" type="text/css">
+    #hero-header { background: url("https://lerndokumentationen.files.wordpress.com/2019/03/hi-tech-computer-keyboard-blue-red-website-header.jpg") no-repeat center; background-size: cover; background-attachment: scroll; }
+    </style>
+    <link rel="stylesheet" id="print-css-1-1" href="https://s2.wp.com/wp-content/mu-plugins/global-print/global-print.css?m=1465851035h&amp;cssminify=yes" type="text/css" media="print">
+    <link rel="stylesheet" id="all-css-2-1" href="https://s0.wp.com/_static/??/wp-content/mu-plugins/actionbar/actionbar.css,/wp-content/themes/h4/global.css?m=1516985148j&amp;cssminify=yes" type="text/css" media="all">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:r%7CUbuntu:r,i,b,bi&amp;subset=latin,latin-ext,latin,latin-ext" media="all"><script type="text/javascript" src="https://s1.wp.com/_static/??-eJyFzkEKAjEMBdAL2ak6duFCPEutcUidpLVJHfT0dkAXwqAQ+Iv/4MdO2SCHsZ5BbGx3q1Ae7+iirOwvYAiH4hU6Qv7gkFiBdbY5iRKI+AEWWkonHMFUgdIAa5u5pAX3/RLyHWH6yyJo9uFqCgg+5/UjHTbOrbe7fd+7+AI4w1vP"></script>
+    <link rel="stylesheet" id="all-css-0-2" href="https://s0.wp.com/wp-content/mu-plugins/highlander-comments/style.css?m=1530132353h&amp;cssminify=yes" type="text/css" media="all">
+    <!--[if lt IE 8]>
+    <link rel='stylesheet' id='highlander-comments-ie7-css'  href='https://s2.wp.com/wp-content/mu-plugins/highlander-comments/style-ie7.css?m=1351637563h&#038;ver=20110606' type='text/css' media='all' />
+    <![endif]-->
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://lerndokumentationen.wordpress.com/xmlrpc.php?rsd">
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://s1.wp.com/wp-includes/wlwmanifest.xml"> 
+    <meta name="generator" content="WordPress.com">
+    <link rel="shortlink" href="https://wp.me/aLPWF">
+    
+    <!-- Jetpack Open Graph Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="SQL Datenbanken">
+    <meta property="og:url" content="https://lerndokumentationen.wordpress.com/">
+    <meta property="og:site_name" content="SQL Datenbanken">
+    <meta property="og:image" content="https://s0.wp.com/i/blank.jpg">
+    <meta property="og:locale" content="de_DE">
+    <meta name="twitter:site" content="@wordpressdotcom">
+    <meta property="fb:app_id" content="249643311490">
+    
+    <!-- End Jetpack Open Graph Tags -->
+    <link rel="shortcut icon" type="image/x-icon" href="https://s1.wp.com/i/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+    <link rel="icon" type="image/x-icon" href="https://s1.wp.com/i/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+    <link rel="apple-touch-icon-precomposed" href="https://s2.wp.com/i/webclip.png">
+    <link rel="search" type="application/opensearchdescription+xml" href="https://lerndokumentationen.wordpress.com/osd.xml" title="SQL Datenbanken">
+    <link rel="search" type="application/opensearchdescription+xml" href="https://s1.wp.com/opensearch.xml" title="WordPress.com">
+    <meta name="theme-color" content="#2c2c3e">
+    <meta name="application-name" content="SQL Datenbanken"><meta name="msapplication-window" content="width=device-width;height=device-height"><meta name="msapplication-task" content="name=Abonnieren;action-uri=https://lerndokumentationen.wordpress.com/feed/;icon-uri=https://s1.wp.com/i/favicon.ico"><meta name="msapplication-task" content="name=Registriere dich für einen kostenlosen Blog;action-uri=http://wordpress.com/signup/;icon-uri=https://s1.wp.com/i/favicon.ico"><meta name="msapplication-task" content="name=WordPress.com-Support;action-uri=http://support.wordpress.com/;icon-uri=https://s1.wp.com/i/favicon.ico"><meta name="msapplication-task" content="name=WordPress.com-Foren;action-uri=http://forums.wordpress.com/;icon-uri=https://s1.wp.com/i/favicon.ico"><style type="text/css" id="custom-background-css">
+    body.custom-background { background-color: #2c2c3e; }
+    </style>
+        <style type="text/css" id="syntaxhighlighteranchor"></style>
+    <style type="text/css" id="custom-colors-css">.has-header-image .site-title a,.has-header-image .site-title a:visited{color:#fff}@media screen and (max-width:32.374em){.main-navigation ul ul{background:0 0 !important}.main-navigation ul ul a{color:inherit !important}}.widget_recent_comments a,.widget_recent_entries a,body,button,input,select,textarea{color:#9e9e9e}#infinite-footer .blog-info a:hover,#infinite-footer .blog-credits a:hover{color:#9e9e9e}.posts-navigation .nav-links a,.main-navigation ul ul a,.main-navigation>div>ul>li.current-menu-item>ul>li a,.main-navigation>div>ul>li.current_page_item>ul>li a{color:#232323}button:not(.menu-toggle),button:not(.menu-toggle):hover,input[type=button],input[type=button]:hover,input[type=reset],input[type=reset]:hover,input[type=submit],input[type=submit]:hover,.button,.button:hover,#content #infinite-handle span button,#content #infinite-handle span button:hover,.more-link,.more-link:hover,.more-link:visited{color:#515151}.site-main>.hentry:nth-child(n+2),.site .infinite-wrap>.hentry:nth-child(n+2),.entry-author-wrapper,.post-navigation,.comment,.page-links a:hover,.main-navigation li{border-color:#ddd}.site-main>.hentry:nth-child(n+2),.site .infinite-wrap>.hentry:nth-child(n+2),.entry-author-wrapper,.post-navigation,.comment,.page-links a:hover,.main-navigation li{border-color:rgba(221,221,221,.25)}#infinite-footer .blog-info a,#infinite-footer .blog-credits,#infinite-footer .blog-credits a{color:#ddd}.post-details,.post-details a,.post-details a:visited,.post-edit-link a,.post-edit-link a:visited{color:#9f9f9d}.post-tags li:first-child,.jetpack-social-navigation li a:hover,.widget_wpcom_social_media_icons_widget li a:hover,.jetpack-social-navigation li a:focus,.widget_wpcom_social_media_icons_widget li a:focus,.jetpack-social-navigation li a:active,.widget_wpcom_social_media_icons_widget li a:active{color:#9e9e9e}.jetpack-social-navigation li a,.widget_wpcom_social_media_icons_widget li a{color:#a4a4a4}.post-navigation .nav-links a:hover,.post-navigation .nav-links a:focus,.post-navigation .nav-links a:active,.entry-author .author-bio,.site-posted-on time,.site-description{color:#9e9e9e}.comment .comment-meta,.comment-form label,.light-text,.light-text a,.light-text a:visited,.widget_rss .rss-date,.widget_rss li>cite{color:#b3b3b1}.light-text a:hover{color:#9f9f9d}body{background-color:#2c2c3e}#infinite-footer .container{background-color:#2c2c3e}#infinite-footer .container{background-color:rgba(44,44,62,.7)}.post-edit-link a{background-color:#282838}.entry-author .author-title,.entry-title,.entry-title a,.entry-title a:visited,.site-posted-on strong,.site-title,.site-title a,.site-title a:visited,.entry-title a:hover,.site-title a:hover,h1,h2,h3,h4,h5,h6,.page-header:not(.page-header-light) h1,.comment .comment-meta .comment-author .fn{color:#4cadad}.comment-form input[type=email]:active,.comment-form input[type=email]:focus,.comment-form input[type=password]:active,.comment-form input[type=password]:focus,.comment-form input[type=search]:active,.comment-form input[type=search]:focus,.comment-form input[type=text]:active,.comment-form input[type=text]:focus,.comment-form input[type=url]:active,.comment-form input[type=url]:focus,.comment-form textarea:active,.comment-form textarea:focus,blockquote,input[type=email]:focus,input[type=password]:focus,input[type=search]:focus,input[type=text]:focus,input[type=url]:focus,textarea:focus{border-color:#3ca2a2}.comment .comment-meta .comment-metadata a:hover,.comment-form span.required,.pingback:before,.post-details a:hover,.post-edit-link a:active,.post-edit-link a:focus,.post-edit-link a:hover,.site-info a:hover,.trackback:before,a,a:visited{color:#40aeae}.main-navigation>div>ul>li.current-menu-item>a,.main-navigation>div>ul>li.current_page_item>a,a:active,a:focus,a:hover,.page-links a:hover{color:#3ca2a2}.posts-navigation .nav-links a,.main-navigation ul ul{background-color:#3ca2a2}button:not(.menu-toggle),input[type=button],input[type=reset],input[type=submit],.button,#content #infinite-handle span button,.more-link{background-color:#a5d8d8}button:not(.menu-toggle):hover,input[type=button]:hover,input[type=reset]:hover,input[type=submit]:hover,.button:hover,#content #infinite-handle span button:hover,.more-link:hover{background-color:#82c9c9}</style>
+    <style type="text/css"></style><link rel="stylesheet" type="text/css" id="gravatar-card-css" href="https://0.gravatar.com/dist/css/hovercard.min.css?ver=201910y"><link rel="stylesheet" type="text/css" id="gravatar-card-services-css" href="https://0.gravatar.com/dist/css/services.min.css?ver=201910y"></head>
+    
+    <body class="home blog custom-background wp-embed-responsive mp6 customizer-styles-applied has-sidebar has-header-image admin-bar highlander-enabled highlander-light tablet-desktop">
+    
+    <div id="page" class="hfeed site">
+        <a class="skip-link screen-reader-text" href="#content">Zum Inhalt springen</a>
+    
+        <div id="hero-header" class="site-hero-section">
+            <header id="masthead" class="site-header" role="banner">
+                <div class="inner">
+                    <div class="site-branding">
+                        
+                                                <!-- .site-logo-link -->
+                                                        <h1 class="site-title"><a href="https://lerndokumentationen.wordpress.com/" rel="home">SQL Datenbanken</a></h1>
+                                            </div><!-- .site-branding -->
+    
+                    
+                    
+                </div><!-- .inner -->
+            </header><!-- #masthead -->
+        </div>
+    
+            
+        
+        
+        <div id="content-wrapper" class="content-wrapper">
+            <div id="content" class="site-content">
+    
+        <div id="primary" class="content-area">
+            <main id="main" class="site-main" role="main">
+    
+            
+                
+                            
+                    
+    <article id="post-41" class="post-41 post type-post status-publish format-standard hentry category-allgemein">
+                <header class="entry-header">
+                <h1 class="entry-title"><a href="https://lerndokumentationen.wordpress.com/2019/03/04/rationale-datenbanken/" rel="bookmark">Rationale Datenbanken;</a></h1>		</header><!-- .entry-header -->	
+        <div class="entry-content">
+            <p>Eine relationale Datenbank kann man sich als eine Sammlung von Tabellen (den Relationen) vorstellen, in welchen Datensätze abgespeichert sind. Jede Zeile (Tupel) in einer Tabelle ist ein Datensatz (record). Jedes Tupel besteht aus einer Reihe von Attributwerten (Attribute = Eigenschaften), den Spalten der Tabelle. Relation heisst Beziehung. Das bedeutet das Relationales Datenbankmodell unter anderem auch auf Beziehungen aufbaut mit anderen Tabellen in einer Datenbank.</p>
+        </div><!-- .entry-content -->
+    
+        <footer class="entry-footer">
+            
+                    <!-- .entry-meta -->
+            </footer><!-- .entry-footer -->
+    </article><!-- #post-## -->
+    
+                
+                    
+    <article id="post-37" class="post-37 post type-post status-publish format-standard hentry category-allgemein">
+                <header class="entry-header">
+                <h1 class="entry-title"><a href="https://lerndokumentationen.wordpress.com/2019/03/04/datenbanken-modellieren/" rel="bookmark">Datenbanken Modellieren.</a></h1>		</header><!-- .entry-header -->	
+        <div class="entry-content">
+            <p>Eine Datenbank kann man gut oder schlecht modellieren, man spricht von einer guten Modellierung, wenn eine Datenbank eine: &nbsp;Redundanzfreie Datenspeicherung und hohe Datenkonsistenz hat. Eine redundanzfreie Datenspeicherung liegt dann vor, wenn jede Information in einer Datenbank genau einmal vorkommt. Des Weiteren muss eine hohe Datenkonsistenz verfolgt werden, so dass Daten eindeutige Informationen darstellen. Es gibt ein Paar neue Begriffe welche man zum Datenbank Modellieren kennen sollte:</p>
+    <table>
+    <tbody>
+    <tr>
+    <td width="353">Begriff</td>
+    <td width="354">Erklärung</td>
+    </tr>
+    <tr>
+    <td width="353">Entität (Tabellenname):</td>
+    <td width="354">Eine Entität stellt ein Objekt eines Themenkreises dar, welches Elemente mit gleichen Merkmalen beinhaltet. Beispiele für mögliche Entitäten sind: Firma, Student, Kurs und Professor.</td>
+    </tr>
+    <tr>
+    <td width="353">Entitätsmenge (Alle Datensätze einer Entität):</td>
+    <td width="354">Eine Entitätsmenge repräsentiert alle Datensätze, die zu einer Entität gehören.</td>
+    </tr>
+    <tr>
+    <td width="353">Relation (Tabelle):</td>
+    <td width="354">Eine Relation umfasst eine Entität inklusive der dazugehörigen Entitätsmenge. Eine komplette Relation besteht aus einer Entitätsbezeichnung, deren Attributen und Tupeln.</td>
+    </tr>
+    <tr>
+    <td width="353">Tupel (Datensatz):</td>
+    <td width="354">Ein Tupel repräsentiert alle Merkmalswerte einer Entität einer Entitätsmenge. Alle Tupel einer Entität bilden die Entitätsmenge.</td>
+    </tr>
+    <tr>
+    <td width="353">Attribut (Spaltenname):</td>
+    <td width="354">Ein Attribut beschreibt genau ein Merkmal eines Tupels in einer Entitätsmenge, zum Beispiel den Namen eines Kunden.</td>
+    </tr>
+    <tr>
+    <td width="353">Attributwert (Wert)</td>
+    <td width="354">Der Attributwert repräsentiert den Wert, den ein Attribut in einem Tupel annehmen kann, zum Beispiel: Attribut =&gt; Name = „Meier“ &lt;= Attributwert</td>
+    </tr>
+    </tbody>
+    </table>
+    <p>&nbsp;</p>
+    <p>Wichtiger Hinweis zum Begriff Relation und Tabelle:</p>
+    <p>Heutzutage werden die Begriffe Relation und Tabelle gleichgesetzt. Das ist leider sehr problematisch, da das Wort „Relation“ im Englischen „Beziehung“ bedeutet. Eine Beziehung hat aber in den Datenbank-Grundlagen eine ganz andere Bedeutung und sagt aus, in welcher Abhängigkeit zwei Tabellen zueinanderstehen.</p>
+    <p>Die Grundelemente einer Datenbankmodellierung bilden: Entitäten, Beziehungen und Attribute. Diese werden grafisch folgendermaßen dargestellt:</p>
+    <p><img data-attachment-id="38" data-permalink="https://lerndokumentationen.wordpress.com/2019/03/04/datenbanken-modellieren/attachment/123/" data-orig-file="https://lerndokumentationen.files.wordpress.com/2019/03/123.jpg?w=1100" data-orig-size="605,100" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="123" data-image-description="" data-medium-file="https://lerndokumentationen.files.wordpress.com/2019/03/123.jpg?w=1100?w=300" data-large-file="https://lerndokumentationen.files.wordpress.com/2019/03/123.jpg?w=1100?w=605" class="alignnone size-full wp-image-38" src="https://lerndokumentationen.files.wordpress.com/2019/03/123.jpg?w=1100" alt="123" srcset="https://lerndokumentationen.files.wordpress.com/2019/03/123.jpg 605w, https://lerndokumentationen.files.wordpress.com/2019/03/123.jpg?w=150 150w, https://lerndokumentationen.files.wordpress.com/2019/03/123.jpg?w=300 300w" sizes="(max-width: 605px) 100vw, 605px"></p>
+    <p>Um was genau es sich bei diesen Elementen handelt, klären die folgenden Punkte:</p>
+    <ul>
+    <li>Eine Entität ist ein individuell identifizierbares Objekt der Wirklichkeit.</li>
+    <li>Eine Beziehung ist eine Verknüpfung / Zusammenhang zwischen zwei oder mehreren Entitäten.</li>
+    <li>Ein Attribut ist eine Eigenschaft, die im Kontext zu einer Entität steht.</li>
+    </ul>
+    <p>Das folgende Beispiel eines Datenbank-Modells soll zeigen, wie leicht ein Modell anhand eines realen Beispiels zu erstellen ist:</p>
+    <p><img data-attachment-id="39" data-permalink="https://lerndokumentationen.wordpress.com/2019/03/04/datenbanken-modellieren/attachment/123123/" data-orig-file="https://lerndokumentationen.files.wordpress.com/2019/03/123123.jpg?w=1100" data-orig-size="675,180" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="123123" data-image-description="" data-medium-file="https://lerndokumentationen.files.wordpress.com/2019/03/123123.jpg?w=1100?w=300" data-large-file="https://lerndokumentationen.files.wordpress.com/2019/03/123123.jpg?w=1100?w=675" class="alignnone size-full wp-image-39" src="https://lerndokumentationen.files.wordpress.com/2019/03/123123.jpg?w=1100" alt="123123" srcset="https://lerndokumentationen.files.wordpress.com/2019/03/123123.jpg 675w, https://lerndokumentationen.files.wordpress.com/2019/03/123123.jpg?w=150 150w, https://lerndokumentationen.files.wordpress.com/2019/03/123123.jpg?w=300 300w" sizes="(max-width: 675px) 100vw, 675px"></p>
+    <p>Erklärung zum Datenbank-Modell: Ein Mitarbeiter hat einen Namen. Ein Projekt hat einen Namen, ein Datum und ein Budget. Ein Mitarbeiter kann mehrere Projekte leiten, aber nur ein Projekt kann von genau einem Mitarbeiter geleitet werden.</p>
+    <p>&nbsp;</p>
+        </div><!-- .entry-content -->
+    
+        <footer class="entry-footer">
+            
+                    <!-- .entry-meta -->
+            </footer><!-- .entry-footer -->
+    </article><!-- #post-## -->
+    
+                
+                    
+    <article id="post-35" class="post-35 post type-post status-publish format-standard hentry category-allgemein">
+                <header class="entry-header">
+                <h1 class="entry-title"><a href="https://lerndokumentationen.wordpress.com/2019/03/04/primaerschluessel-primary-key/" rel="bookmark">Primärschlüssel (primary key)</a></h1>		</header><!-- .entry-header -->	
+        <div class="entry-content">
+            <p>Der Primärschlüssel kommt in relationalen Datenbanken zum Einsatz und wird zur eindeutigen Identifizierung eines Datensatzes verwendet. In einer normalisierten Datenbank besitzen alle Tabellen einen Primärschlüssel. Der Wert eines Primärschlüssels muss in einer Tabelle einmalig sein, da er jeden Datensatz eindeutig kennzeichnet. Des Weiteren wird er häufig als Datenbank-Index verwendet, um die Daten auf der Festplatte abzulegen. Es handelt es sich um einen eindeutigen Schlüssel, wenn eine Spalte der Tabelle gespeichert wird. Als Spalte kann ein Attribut des Datensatzes verwendet werden, das für jeden Eintrag in der Tabelle einen einmaligen Wert annimmt. Als eindeutiges Primärschlüsselattribut könnte beispielsweise die Sozialversicherungsnummer in einer Mitarbeitertabelle verwendet werden.</p>
+        </div><!-- .entry-content -->
+    
+        <footer class="entry-footer">
+            
+                    <!-- .entry-meta -->
+            </footer><!-- .entry-footer -->
+    </article><!-- #post-## -->
+    
+                
+                    
+    <article id="post-33" class="post-33 post type-post status-publish format-standard hentry category-allgemein">
+                <header class="entry-header">
+                <h1 class="entry-title"><a href="https://lerndokumentationen.wordpress.com/2019/03/04/fremdschluessel-foreign-key/" rel="bookmark">Fremdschlüssel (Foreign Key)</a></h1>		</header><!-- .entry-header -->	
+        <div class="entry-content">
+            <p>Der Fremdschlüssel kann Bestandteil einer Tabelle in einer relationalen Datenbank sein. Dabei handelt es sich um eine Schlüsselspalte, die auf einen Primärschlüssel einer anderen oder aber derselben Tabelle verweist. Es kann sich dabei um einen einfachen oder zusammengesetzten Schlüssel handeln. Das hängt davon ab, wie der Primärschlüssel der referenzierten Tabelle aufgebaut ist.</p>
+    <p><em>was für Fremdschlüsselarten gibt es?</em></p>
+    <p>Aufgrund der referentiellen Integrität kann der Fremdschlüssel nur Werte annehmen, die in der Referenztabelle vorhanden sind. Zudem kann eine beliebige Anzahl von Datensätzen den gleichen Fremdschlüsselwert aufweisen.</p>
+    <p>Beispiel für den Einsatz eines Fremdschlüssels:</p>
+    <p>In einer normalisierten Tabelle die Kontakte verwaltet, kann beispielsweise zu einer Person ein Unternehmen referenziert werden. In der Tabelle „Ansprechpartner“ wird „Colin Meier“ und ihre Telefonnummer angelegt. Ihr Unternehmen wird aus der Tabelle „Unternehmen“ referenziert, das wäre dann beispielsweise die „ABC GmbH“. Über diese Referenz kann bei einer Abfrage die Anschrift und andere Fakten zum Unternehmen aus der Tabelle „Unternehmen“ abgerufen werden.</p>
+        </div><!-- .entry-content -->
+    
+        <footer class="entry-footer">
+            
+                    <!-- .entry-meta -->
+            </footer><!-- .entry-footer -->
+    </article><!-- #post-## -->
+    
+                
+                    
+    <article id="post-31" class="post-31 post type-post status-publish format-standard hentry category-allgemein">
+                <header class="entry-header">
+                <h1 class="entry-title"><a href="https://lerndokumentationen.wordpress.com/2019/03/04/normalisierung-von-datenbanken/" rel="bookmark">Normalisierung von Datenbanken.</a></h1>		</header><!-- .entry-header -->	
+        <div class="entry-content">
+            <p>Unter Normalisierung eines relationalen Datenbankmodells versteht man die Aufteilung von Attributen in mehrere Relationen (Tabellen) mithilfe der Normalisierungsregeln und deren Normalformen, sodass eine Form entsteht, die keine vermeidbaren Redundanzen mehr enthält.</p>
+    <p><em>„Warum wird eine Normalisierung durchgeführt?“</em></p>
+    <p>Ziel der Normalisierung ist eine redundanzfreie Datenspeicherung zu erstellen. Redundanzfrei bedeutet, dass Daten entfernt werden können, ohne dass es zu Informationsverlusten kommt. Weiterhin soll die Normalisierung Anomalien entfernen. Im Normalisierungsprozess gibt es fünf Normalformen, welche im Folgenden genauer erklärt werden. In der Datenbankentwicklung ist die Dritte Normalform oft ausreichend, um die perfekte Balance aus Redundanz, Performance und Flexibilität für eine Datenbank zu gewährleisten. Natürlich gibt es auch Sonderfälle, z.B. im wissenschaftlichen Bereich, wo eine Datenbank bis zur 5. Normalform normalisiert werden kann bzw. muss.</p>
+    <p>Ziele der Datenbank-Normalisierung:</p>
+    <ul>
+    <li>Beseitigung von Redundanzen</li>
+    <li>Vermeidung von Anomalien (funktionelle und transitive Abhängigkeiten)</li>
+    <li>Erstellung eines klar strukturierten Datenbankmodells</li>
+    </ul>
+        </div><!-- .entry-content -->
+    
+        <footer class="entry-footer">
+            
+                    <!-- .entry-meta -->
+            </footer><!-- .entry-footer -->
+    </article><!-- #post-## -->
+    
+                
+                    
+    <article id="post-29" class="post-29 post type-post status-publish format-standard hentry category-allgemein">
+                <header class="entry-header">
+                <h1 class="entry-title"><a href="https://lerndokumentationen.wordpress.com/2019/03/04/ddl-data-definition-language/" rel="bookmark">DDL (Data Definition&nbsp;Language)</a></h1>		</header><!-- .entry-header -->	
+        <div class="entry-content">
+            <p>Die Structured Query Language (SQL) zerfällt grob in zwei Teile:</p>
+    <ul>
+    <li>Befehle, mit denen Sie in einem Datenbankmanagementsystem Datenbankobjekte, wie Datenbanken, Tabellen, Spalten und Indizes, erstellen, ändern bzw. löschen, sind in der DDL (Data Definition Language) zusammengefasst. Der DDL widmen wir uns in diesem Abschnitt.</li>
+    <li>Befehle, mit denen Sie Daten in Tabellen einfügen, bearbeiten und suchen, gehören zur DML (Data Manipulation Language), mit der wir uns im nächsten Abschnitt beschäftigen.</li>
+    </ul>
+        </div><!-- .entry-content -->
+    
+        <footer class="entry-footer">
+            
+                    <!-- .entry-meta -->
+            </footer><!-- .entry-footer -->
+    </article><!-- #post-## -->
+    
+                
+                
+            
+            </main><!-- #main -->
+        </div><!-- #primary -->
+    
+    <div id="secondary" class="widget-area" role="complementary">
+        <aside id="text-1" class="widget widget_text"><h1 class="widget-title">Seitenleisten-Text-Widget</h1>			<div class="textwidget">Dies ist ein Text-Widget. Mit dem Text-Widget kannst du zu allen Seitenleisten deines Themes Text oder HTML-Code hinzufügen. Mit einem Text-Widget kannst du Text, Links, Bilder, HTML-Code oder eine Kombination daraus anzeigen. Bearbeite diese im Bereich „Widget“ des <a href="https://wordpress.com/customize/">Customizer</a>.</div>
+            </aside></div><!-- #secondary -->
+    
+            </div><!-- #content -->
+    
+            <footer id="colophon" class="site-footer" role="contentinfo">
+                            <!-- .site-info -->
+            </footer><!-- #colophon -->
+        </div><!-- #content-wrapper -->
+    </div><!-- #page -->
+    
+    <!--  -->
+    <script type="text/javascript" src="//0.gravatar.com/js/gprofiles.js?ver=201910y"></script>
+    <script type="text/javascript">
+    /* <![CDATA[ */
+    var WPGroHo = {"my_hash":""};
+    /* ]]> */
+    </script>
+    <script type="text/javascript" src="https://s1.wp.com/wp-content/mu-plugins/gravatar-hovercards/wpgroho.js?m=1380573781h"></script>
+    
+        <script>
+            //initialize and attach hovercards to all gravatars
+            jQuery( document ).ready( function( $ ) {
+    
+                if (typeof Gravatar === "undefined"){
+                    return;
+                }
+    
+                if ( typeof Gravatar.init !== "function" ) {
+                    return;
+                }			
+    
+                Gravatar.profile_cb = function( hash, id ) {
+                    WPGroHo.syncProfileData( hash, id );
+                };
+                Gravatar.my_hash = WPGroHo.my_hash;
+                Gravatar.init( 'body', '#wp-admin-bar-my-account' );
+            });
+        </script>
+    
+            <div style="display:none">
+        </div>
+    <script type="text/javascript">
+    /* <![CDATA[ */
+    var HighlanderComments = {"loggingInText":"Anmelden \u2026","submittingText":"Sende Kommentar \u2026","postCommentText":"Kommentar absenden","connectingToText":"Verbinde mit %s","commentingAsText":"%1$s: Du kommentierst mit Deinem %2$s-Konto. ","logoutText":"Abmelden","loginText":"Anmelden","connectURL":"https:\/\/lerndokumentationen.wordpress.com\/public.api\/connect\/?action=request","logoutURL":"https:\/\/lerndokumentationen.wordpress.com\/wp-login.php?action=logout&_wpnonce=00584be747","homeURL":"https:\/\/lerndokumentationen.wordpress.com\/","postID":"41","gravDefault":"identicon","enterACommentError":"Bitte gib einen Kommentar ein","enterEmailError":"Bitte hier deine E-Mail-Adresse eingeben","invalidEmailError":"Ung\u00fcltige E-Mail-Adresse","enterAuthorError":"Bitte hier deinen Namen eingeben","gravatarFromEmail":"Dieses Bild wird angezeigt, wenn Du einen Kommentar hinterl\u00e4sst. Klicken, um es anzupassen.","logInToExternalAccount":"Melde dich an, um Details von einem dieser Konten zu verwenden.","change":"\u00c4ndern","changeAccount":"Konto \u00e4ndern","comment_registration":"0","userIsLoggedIn":"","isJetpack":"","text_direction":"ltr"};
+    /* ]]> */
+    </script>
+    <script type="text/javascript" src="https://s1.wp.com/_static/??/wp-content/js/jquery/jquery.autoresize.js,/wp-content/mu-plugins/highlander-comments/script.js?m=1550785955j"></script>
+    
+        <div id="carousel-reblog-box">
+            <form action="#" name="carousel-reblog">
+                <textarea id="carousel-reblog-content" name="carousel-reblog-content" placeholder="Füge hier deine Gedanken hinzu... (optional)"></textarea>
+                <label for="carousel-reblog-to-blog-id" id="carousel-reblog-lblogid">Veröffentlichen auf</label>
+                <select name="carousel-reblog-to-blog-id" id="carousel-reblog-to-blog-id">
+                            </select>
+    
+                <div class="submit">
+                    <span class="canceltext"><a href="#" class="cancel">Abbrechen</a></span>
+                    <input type="submit" name="carousel-reblog-submit" class="button" id="carousel-reblog-submit" value="Beitrag rebloggen">
+                    <input type="hidden" id="carousel-reblog-blog-id" value="159164457">
+                    <input type="hidden" id="carousel-reblog-blog-url" value="https://lerndokumentationen.wordpress.com">
+                    <input type="hidden" id="carousel-reblog-blog-title" value="SQL Datenbanken">
+                    <input type="hidden" id="carousel-reblog-post-url" value="">
+                    <input type="hidden" id="carousel-reblog-post-title" value="">
+                </div>
+    
+                <input type="hidden" id="_wpnonce" name="_wpnonce" value="5ed4d07d8d"><input type="hidden" name="_wp_http_referer" value="/">		</form>
+    
+            <div class="arrow"></div>
+        </div>
+    <link rel="stylesheet" id="all-css-0-3" href="https://s0.wp.com/wp-content/mu-plugins/carousel/jetpack-carousel.css?m=1524699534h&amp;cssminify=yes" type="text/css" media="all">
+    <!--[if lte IE 8]>
+    <link rel='stylesheet' id='jetpack-carousel-ie8fix-css'  href='https://s1.wp.com/wp-content/mu-plugins/carousel/jetpack-carousel-ie8fix.css?m=1412618825h&#038;ver=20121024' type='text/css' media='all' />
+    <![endif]-->
+    <script type="text/javascript">
+    /* <![CDATA[ */
+    var actionbardata = {"siteID":"159164457","siteName":"SQL Datenbanken","siteURL":"http:\/\/lerndokumentationen.wordpress.com","icon":"<img alt='' src='https:\/\/s2.wp.com\/i\/logo\/wpcom-gray-white.png' class='avatar avatar-50' height='50' width='50' \/>","canManageOptions":"","canCustomizeSite":"","isFollowing":"","themeSlug":"pub\/independent-publisher-2","signupURL":"https:\/\/wordpress.com\/start\/","loginURL":"https:\/\/lerndokumentationen.wordpress.com\/wp-login.php?redirect_to=https%3A%2F%2Flerndokumentationen.wordpress.com%2F2019%2F03%2F04%2Frationale-datenbanken%2F","themeURL":"https:\/\/wordpress.com\/theme\/independent-publisher-2\/","xhrURL":"https:\/\/lerndokumentationen.wordpress.com\/wp-admin\/admin-ajax.php","nonce":"9276bc3a32","isSingular":"","isFolded":"","isLoggedIn":"","isMobile":"","subscribeNonce":"<input type=\"hidden\" id=\"_wpnonce\" name=\"_wpnonce\" value=\"90d0ce9c4b\" \/>","referer":"https:\/\/lerndokumentationen.wordpress.com\/","canFollow":"1","feedID":"94091745","statusMessage":"","customizeLink":"https:\/\/lerndokumentationen.wordpress.com\/wp-admin\/customize.php?url=https%3A%2F%2Flerndokumentationen.wordpress.com%2F","i18n":{"view":"Webseite ansehen","follow":"Folgen","following":"Du folgst","edit":"Bearbeiten","login":"Anmelden","signup":"Registrieren","customize":"Anpassen","report":"Melde diesen Inhalt","themeInfo":"Theme herunterladen: Independent Publisher 2","shortlink":"Kurzlink kopieren","copied":"Kopiert","followedText":"Neue Beitr\u00e4ge von dieser Website erscheinen nun in deinem <a href=\"https:\/\/wordpress.com\/\">Reader<\/a>.","foldBar":"Diese Leiste einklappen","unfoldBar":"Diese Leiste aufklappen","editSubs":"Abonnements verwalten","viewReader":"Website im Reader anzeigen","viewReadPost":"Beitrag im Reader lesen","subscribe":"Anmelden","enterEmail":"Gib deine E-Mail-Adresse ein","followers":"","alreadyUser":"Du hast bereits ein WordPress.com-Konto? <a href=\"https:\/\/lerndokumentationen.wordpress.com\/wp-login.php?redirect_to=https%3A%2F%2Flerndokumentationen.wordpress.com%2F2019%2F03%2F04%2Frationale-datenbanken%2F\">Melde dich jetzt an.<\/a>","stats":"Statistik"}};
+    /* ]]> */
+    </script>
+    <script type="text/javascript">
+    /* <![CDATA[ */
+    var jetpackCarouselStrings = {"widths":[370,700,1000,1200,1400,2000],"is_logged_in":"","lang":"de","ajaxurl":"https:\/\/lerndokumentationen.wordpress.com\/wp-admin\/admin-ajax.php","nonce":"bb61553f80","display_exif":"1","display_geo":"1","single_image_gallery":"1","single_image_gallery_media_file":"","background_color":"black","comment":"Kommentar","post_comment":"Kommentar absenden","write_comment":"Verfasse einen Kommentar\u00a0\u2026","loading_comments":"Lade Kommentare\u00a0\u2026","download_original":"Bild in Originalgr\u00f6\u00dfe anschauen <span class=\"photo-size\">{0}<span class=\"photo-size-times\">\u00d7<\/span>{1}<\/span>","no_comment_text":"Stelle bitte sicher, das du mit deinem Kommentar ein bisschen Text \u00fcbermittelst.","no_comment_email":"Bitte eine E-Mail-Adresse angeben, um zu kommentieren.","no_comment_author":"Bitte deinen Namen angeben, um zu kommentieren.","comment_post_error":"Dein Kommentar konnte leider nicht abgeschickt werden. Bitte versuche es sp\u00e4ter erneut.","comment_approved":"Dein Kommentar wurde genehmigt.","comment_unapproved":"Dein Kommentar wartet auf Freischaltung.","camera":"Kamera","aperture":"Blende","shutter_speed":"Verschlusszeit","focal_length":"Brennweite","copyright":"Copyright","comment_registration":"0","require_name_email":"1","login_url":"https:\/\/lerndokumentationen.wordpress.com\/wp-login.php?redirect_to=https%3A%2F%2Flerndokumentationen.wordpress.com%2F2019%2F03%2F04%2Fdatenbanken-modellieren%2F","blog_id":"159164457","meta_data":["camera","aperture","shutter_speed","focal_length","copyright"],"local_comments_commenting_as":"<fieldset><label for=\"email\">E-Mail  (Erforderlich)<\/label> <input type=\"text\" name=\"email\" class=\"jp-carousel-comment-form-field jp-carousel-comment-form-text-field\" id=\"jp-carousel-comment-form-email-field\" \/><\/fieldset><fieldset><label for=\"author\">Name (Erforderlich)<\/label> <input type=\"text\" name=\"author\" class=\"jp-carousel-comment-form-field jp-carousel-comment-form-text-field\" id=\"jp-carousel-comment-form-author-field\" \/><\/fieldset><fieldset><label for=\"url\">Website<\/label> <input type=\"text\" name=\"url\" class=\"jp-carousel-comment-form-field jp-carousel-comment-form-text-field\" id=\"jp-carousel-comment-form-url-field\" \/><\/fieldset>","reblog":"Rebloggen","reblogged":"rebloggt","reblog_add_thoughts":"F\u00fcge hier deine Gedanken hinzu... (optional)","reblogging":"Wird rebloggt...","post_reblog":"Beitrag rebloggen","stats_query_args":"blog=159164457&v=wpcom&tz=2&user_id=0&subd=lerndokumentationen","is_public":"1","reblog_enabled":""};
+    /* ]]> */
+    </script>
+    <script type="text/javascript" src="https://s0.wp.com/_static/??-eJydUdFOwzAM/CE8MxgIHhDfkiVe6zZxssRp4e9JJTZNY6qAl8Q+350dB+cENoqSKA4FHU1sKX1shnKHF6VQIfnasRT0PFLBY6VKvRHnKV+TtafQKKnukcVRonaIQss9l54yPCytxEzcGeUo/9OXkRN4lhEO0dYCB/4x9S+MWCwWmzkpzMnGsPLwmV1HWpBqq8aRCbyZUSkkb5Su8BUf4wIL7E3GYIpSbhHEiXJm11zO2B8dNBs7ljWRXXa9iM7Rid2W4OvSfFlrYrmFD+3H8+f3tblk3ehlTY61kMeBNLW54AQ0zXt42z7tXh+3u+eX++ELG9Hvww=="></script><div class="widget widget_eu_cookie_law_widget" style="display: block;">
+    </div>
+    <script type="text/javascript">
+    // <![CDATA[
+    (function() {
+    try{
+      if ( window.external &&'msIsSiteMode' in window.external) {
+        if (window.external.msIsSiteMode()) {
+          var jl = document.createElement('script');
+          jl.type='text/javascript';
+          jl.async=true;
+          jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(jl, s);
+        }
+      }
+    }catch(e){}
+    })();
+    // ]]>
+    </script><script src="//stats.wp.com/w.js?59" type="text/javascript" async="" defer=""></script>
+    <script type="text/javascript">
+    _tkq = window._tkq || [];
+    _stq = window._stq || [];
+    _tkq.push(['storeContext', {'blog_id':'159164457','blog_tz':'2','user_lang':'de','blog_lang':'de','user_id':'0'}]);
+    _stq.push(['view', {'blog':'159164457','v':'wpcom','tz':'2','user_id':'0','subd':'lerndokumentationen'}]);
+    _stq.push(['extra', {'crypt':'UE40eW5QN0p8M2Y/RE1mJVY3bm9aR3VCbS9mWm1pRyZuJS1LX1t5QmRXZzE3RC9rQWZHK1FjbDltdWdaMVFFZTcxUGVHLWR0WTJoS05QSm18aVRSN010PUsydXZBQ35kQmdGSnBHXTU2VXFFbTk0PVFjVVVsbWxJNk0yW1Y9SWwvbVAyd1pdRkdxZEpIT3NNdjNpVTIzP0xSYU1MVG0xSHdHNE1PP2Z0ZHxULTI/THRaZFQxdEpxfC1haUFTLS5pYXxJbyslM1d6fk9JaFdjaVZKP0ssY01saixYXzlRWXAzVkt6Jl1LQmFqJjV5anJoMzVxVURaTTVYb0tNRzAwUVpZQ0Qwb0RkRis3P3M/ampWcllnQist'}]);
+    _stq.push([ 'clickTrackerInit', '159164457', '0' ]);
+        </script>
+    <noscript><img src="https://pixel.wp.com/b.gif?v=noscript" style="height:0px;width:0px;overflow:hidden" alt="" /></noscript>
+    <script>
+    if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
+    
+        wpcom_mobile_user_agent_info.init();
+        var mobileStatsQueryString = "";
+        
+        if( false !== wpcom_mobile_user_agent_info.matchedPlatformName )
+            mobileStatsQueryString += "&x_" + 'mobile_platforms' + '=' + wpcom_mobile_user_agent_info.matchedPlatformName;
+        
+        if( false !== wpcom_mobile_user_agent_info.matchedUserAgentName )
+            mobileStatsQueryString += "&x_" + 'mobile_devices' + '=' + wpcom_mobile_user_agent_info.matchedUserAgentName;
+        
+        if( wpcom_mobile_user_agent_info.isIPad() )
+            mobileStatsQueryString += "&x_" + 'ipad_views' + '=' + 'views';
+    
+        if( "" != mobileStatsQueryString ) {
+            new Image().src = document.location.protocol + '//pixel.wp.com/g.gif?v=wpcom-no-pv' + mobileStatsQueryString + '&baba=' + Math.random();
+        }
+        
+    }
+    </script>
+    
+    
+    <img src="https://pixel.wp.com/g.gif?blog=159164457&amp;v=wpcom&amp;tz=2&amp;user_id=0&amp;subd=lerndokumentationen&amp;host=lerndokumentationen.wordpress.com&amp;ref=&amp;fcp=395&amp;rand=0.12602968557705685" alt=":)" id="wpstats"></body></html>
