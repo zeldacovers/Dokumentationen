@@ -34,10 +34,14 @@ nav{
     box-shadow: none;
     width: 5%;
     float: right;
-    margin: 1% 1% 0% 0%;
+    margin: 1% 0% 0% 1%;
+    position: fixed;
+    
 }
 #titelbild:hover{
-    background-color: #00000023;
+    background-color: #001429;
+    border-radius: 50px;
+    
 }
 li{
     margin: 0px 50px;
@@ -58,7 +62,6 @@ a{
     display: flex;
     justify-content: center;
     margin-right: 0px;
-    padding-left: 6.5%;
     padding-top: 2%;
 }
  #titel{
@@ -94,9 +97,13 @@ hr{
 }
 h1{
     margin: 0%;
+    text-align: justify
 }
 h2{
     font-size: 21px;
+}
+ul{
+    text-align: justify;
 }
 .style1{
     text-align: justify;
@@ -108,6 +115,7 @@ td{
 }
 p{
     margin-top: 30px;
+    text-align: justify;
 }
  img{
     box-shadow: 10px 9px 0px 0px rgba(155, 155, 155, 0.719);
@@ -119,4 +127,7 @@ p{
  .erklarung{
      background-color:#154271;  
      text-align: center;  
+ }
+ .herv{
+     color: #00ff68;
  }

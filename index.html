@@ -209,7 +209,109 @@
                     <li>Befehle, mit denen Sie Daten in Tabellen einf&uuml;gen, bearbeiten und suchen, geh&ouml;ren zur DML
                         (Data Manipulation Language), mit der wir uns im n&auml;chsten Abschnitt besch&auml;ftigen.</li>
                 </ul>
+                <ul>
+                    <li>In dieser Sprache werden die 3 Befehle, Create Alter und Drop verwendet.</li>
+                </ul>
+                <p>Hier ein Paar Befehle und Ihre Beschreibung:</p>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="begriff" width="344">
+                                <p>Befehl</p>
+                            </td>
+                            <td class="erklarung" width="345">
+                                <p>Erkl&auml;rung</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="344">
+                                <p class="herv">CREATE TABLE [FIRMA](</p>
+                                <p class="herv">[FIRNR] INT NOT NULL PRIMARY KEY</p>
+                                <p class="herv">,[FIRUSER] VARCHAR(100) NOT NULL</p>
+                                <p class="herv">,[FIRTYP] INT NOT NULL);</p>
+                            </td>
+                            <td width="345">
+                                <p>Dieser Befehl wird genutzt um eine Tabelle zu erstellen. Dazu benutzen wir den Befehl
+                                    &laquo;Create&raquo;. &nbsp;Dabei muss man eine neue Tabelle benennen, in unserem Fall
+                                    jetzt FIRMA, danach werden die Attribute Einzel angegeben und die dazu passenden Datentypen
+                                    vergeben.
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="344">
+                                <p class="herv">ALTER TABLE [FIRMA] ADD [USTID] VARCHAR(9);</p>
+                            </td>
+                            <td width="345">
+                                <p>Mit einem ALTER Befehl haben wir die M&ouml;glichkeit, eine Tabelle zu ver&auml;ndern
+                                    bzw. etwas hinzuzuf&uuml;gen.&nbsp; In diesem Beispiel wird bei der Tabelle Firma noch
+                                    das Attribut USTID hinzugef&uuml;gt.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="344">
+                                <p class="herv">DROP TABLE [FIRMA];</p>
+                            </td>
+                            <td width="345">
+                                <p>Als letzten Befehl der DDL haben wir noch den Befehl Drop mit welchem man Tabellen, Attribute
+                                    und Datenbanken l&ouml;schen kann. In dieser Beispiel wird die Tabelle FIRMA gel&ouml;scht.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
+            <div class="style1">
+                <h1>DCL (Data Control Language)</h1>
+                <hr>
+                <p>Die Data Control Language ist daf&uuml;r zust&auml;ndig Rechte zu vergeben oder sie zu entziehen dabei
+                    werden wir im Allgemeinen nur zwei Befehle f&uuml;r diese Sprachschicht Benutzen n&auml;mlich:</p>
+                <ul>
+                    <li>Grant</li>
+                    <li>Revoke</li>
+                </ul>
+                <p>Als kleines Beispiel will ich alle Berechtigungen f&uuml;r die Datenbank 'FIRMA' f&uuml;r den Benutzer
+                    'Colin @localhost' erteilen. Deswegen erstelle ich zuerst einen Benutzer mit dem Namen Colin:</p>
+                <p class="herv">CREATE USER 'Colin'@'localhost' IDENTIFIED BY '123';</p>
+                <p>Dabei ist es wichtig zu wissen, dass zwischen &laquo;IDENTIFIED BY&raquo; das Passwort des jeweiligen
+                    Benutzers seinen Platzt findet in unserem Fall 123. Danach kann ich alle Berechtigungen mit der GRANT-Anweisung
+                    f&uuml;r den USER Colin auf der Datenbank FIRMA gew&auml;hren mit:</p>
+                <p class="herv">GRANT ALL PRIVILEGES ON FIRMA. * TO 'Colin'@'localhost';</p>
+                <p>Nun hat der USER Colin alle Berechtigungen f&uuml;r die Tabelle, jedoch wollen wir Vielleicht nicht, dass
+                    der USER Colin alle Berechtigungen hat. Es gibt n&auml;mlich noch weitere Berechtigungs-Typen:</p>
+                <ul>
+                    <li>CREATE: Erlaubt dem Benutzer, neue Datenbanken zu erstellen.</li>
+                    <li>DROP: Erlaubt einem Benutzer, Datenbanken zu L&ouml;schen.</li>
+                    <li>DELETE: Erlaubt einem Benutzer, einzelne Zeilen in einer Tabelle zu l&ouml;schen.</li>
+                    <li>INSERT: Erlaubt einem Benutzer, neue Zeilen in einer Tabelle zu schreiben.</li>
+                    <li>SELECT: Leseberechtigung f&uuml;r eine Datenbank oder eine Tabelle</li>
+                    <li>UPGRADE: Erlaubnis, eine Zeile zu aktualisieren</li>
+                    <li>GRANT OPTION: Erlaubt einen Benutzer weitere Benutzer zu erstellen oder zu l&ouml;schen.</li>
+                </ul>
+                <p>&nbsp;</p>
+                <p>Zum Schluss werden wir alle &Auml;nderungen mit dem Befehl FLUSH speichern:</p>
+                <p class="herv">FLUSH PRIVILEGES;</p>
+                <p>Widmen wir uns also noch dem letzten Befehl dieser Sprachschicht n&auml;mlich REVOKE. Denn REVOKE wird
+                    verwendet um, Berechtigungen von Benutzerkonten zu entfernen. Also werde ich wieder alle Rechte vom USER
+                    Colin entziehen.</p>
+                <p class="herv">REVOKE ALL PRIVILEGES ON FIRMA. * FROM 'Colin'@'localhost';</p>
+                <p class="herv">FLUSH PRIVILEGES;</p>
+            </div>
+            <div class="style1">
+                <h1>DML (Data Manipulation Language)</h1>
+                <hr>
+                <p>Unsere Tabellen sind angelegt und warten darauf, mit Daten gef&uuml;ttert bzw. durchsucht zu werden. Lernen
+                    Sie im Folgenden, wie das gemacht wird. Fangen wir also am besten damit an, wie eine Datenbank mit Daten
+                    gef&uuml;ttert werden kann, dies Machen wir mit dem Befehl INSERT.</p>
+                <p class="herv">INSERT INTO &lt;tabelle&gt; (&lt;spalte1&gt;, &lt;spalte2&gt;, ...) VALUES (&lt;wert1&gt;,
+                    &lt;wert2&gt;, ...);
+                </p>
+                <p>Als Beispiel wollen wir einen Datensatz in die Tabelle t_admin einf&uuml;gen:</p>
+                <p class="herv">INSERT INTO t_admin (adm_user, adm_pass) VALUES ('Meister', 'geheim');</p>
+                <p>Die Zuordnung, welcher Wert in welche Spalte eingef&uuml;gt wird, geschieht &uuml;ber die jeweiligen Positionen
+                    innerhalb der Klammern; der erste Wert "`Meister"' wird in die erste Spalte "`adm_user"' eingef&uuml;gt.</p>
+                    
+            </div>
+
         </main>
     </div>
 </body>
