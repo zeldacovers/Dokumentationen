@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
-html{
+html {
     scroll-behavior: smooth;
     font-family: 'Ubuntu', sans-serif;
     background-color: #033b78;
@@ -7,192 +7,207 @@ html{
     animation-duration: 22s;
     animation-iteration-count: infinite;
 }
+
 @keyframes example {
-    0%   {background-color:#033b78; }
-    25%  {background-color:rgb(5, 30, 145); }
-    50%  {background-color:rgb(9, 9, 53); }
-    75%  {background-color:rgb(2, 103, 110); }
-    100% {background-color:#033b78;}
+    0% {
+        background-color: #033b78;
+    }
+    25% {
+        background-color: rgb(5, 30, 145);
+    }
+    50% {
+        background-color: rgb(9, 9, 53);
+    }
+    75% {
+        background-color: rgb(2, 103, 110);
+    }
+    100% {
+        background-color: #033b78;
+    }
 }
-nav{
-        display: flex;
-        justify-content: center;
-        margin: 0% 0% 9% 0%;
-        background-color: #154271;
-        
-       
-    
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin: 0% 0% 9% 0%;
+    background-color: #154271;
 }
+
 .hovernav {
     padding: 4% 0%;
     margin: 0px 30px;
 }
-.hovernav:hover{
+
+.hovernav:hover {
     background-color: #00000023;
 }
 
-#titelbild{
+#titelbild {
     border-radius: 50px;
-    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
     width: 5%;
     float: right;
     margin: 1% 0% 0% 1%;
     position: fixed;
-    
 }
-#titelbild:hover{
+
+#titelbild:hover {
     background-color: #001429;
-    box-shadow:10px 10px 5px 0px rgba(0,0,0,0.75);
-    
-    
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
-li{
+
+li {
     margin: 0px 50px;
     margin: 0px 5px;
 }
-header{
-    
-        box-shadow: 24px 16px 30px -1px rgba(0,0,0,0.41);
-    
+
+header {
+    box-shadow: 24px 16px 30px -1px rgba(0, 0, 0, 0.41);
 }
-a{
+
+a {
     text-decoration: none;
     color: #dfecfb;
     font-size: 17px;
     font-family: 'Ubuntu', sans-serif;
 }
-#titelh1{
+
+#titelh1 {
     display: flex;
     justify-content: center;
     margin-right: 0px;
     padding-top: 2%;
 }
- #titel{
+
+#titel {
     padding-bottom: 5%;
     background-color: #02254b;
 }
-body{
+
+body {
     color: #dfecfb;
 }
-#liststyle{
+
+#liststyle {
     list-style-type: none;
     display: flex;
     flex-direction: row;
     margin: 0%;
     padding: 0%;
 }
- main{
+
+main {
     margin-right: 9%;
     margin-left: 9%;
     background-color: #001429;
-    box-shadow: 7px 0px 86px 3px rgba(0,0,0,0.7);
+    box-shadow: 7px 0px 86px 3px rgba(0, 0, 0, 0.7);
     padding-left: 11%;
     padding-right: 11%;
     padding-bottom: 3%;
     color: #dfecfb;
 }
-hr{
+
+hr {
     background: rgb(255, 255, 255);
     border: none;
     color: rgb(255, 255, 255);
     height: 2px;
     width: 100%;
 }
-h1{
+
+h1 {
     margin: 0%;
     text-align: justify
 }
-h2{
+
+h2 {
     font-size: 21px;
 }
-ul{
+
+ul {
     text-align: justify;
 }
-.style1{
+
+.style1 {
     text-align: justify;
     margin-top: 5%;
     margin-bottom: 15%;
 }
-td{
+
+td {
     border: solid 2px white;
 }
-p{
+
+p {
     margin-top: 30px;
     text-align: justify;
 }
- img{
+
+img {
     box-shadow: 10px 9px 0px 0px rgba(155, 155, 155, 0.719);
     width: 100%
- }
- .begriff{
-     background-color:#154271;
-     text-align: center; 
- }
- .erklarung{
-     background-color:#154271;  
-     text-align: center;  
- }
- .herv{
-     color: #00ff68;
-     margin-top: -1%;
- }
+}
 
+.begriff {
+    background-color: #154271;
+    text-align: center;
+}
 
+.erklarung {
+    background-color: #154271;
+    text-align: center;
+}
 
+.herv {
+    color: #00ff68;
+    margin-top: -1%;
+}
 
-
-
-
- @media screen and (max-width: 769px) {
-
-    #titelbild{
+@media screen and (max-width: 769px) {
+    #titelbild {
         border-radius: 50px;
-        box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.75);
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.75);
         width: 6%;
         float: right;
         margin: 1% 0% 0% 1%;
         position: fixed;
-        
     }
-    #titelbild:hover{
+    #titelbild:hover {
         background-color: #001429;
-        box-shadow:10px 10px 5px 0px rgba(0,0,0,0.75);
+        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     }
-
-a{
-            text-decoration: none;
-            color: #dfecfb;
-            font-size: 14px;
-            font-family: 'Ubuntu', sans-serif;
-        }
-h1{
-            margin: 0%;
-            text-align: left;
-            font-size: 15px;
-        }
-        #titelh1{
-            display: flex;
-            justify-content: center;
-            margin-right: 0px;
-            padding-top: 2%;
-            font-size: 25px;
-        }
- p{
-     font-size: 10px;
-     text-align: left;
- }
- h2{
-     font-size: 14px;
-     text-align: center;
- }
- li{
-     font-size: 10px;
-     text-align: left;
- }
- td{
-    border: solid 2px white;
-    text-align: left;
+    a {
+        text-decoration: none;
+        color: #dfecfb;
+        font-size: 14px;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    h1 {
+        margin: 0%;
+        text-align: left;
+        font-size: 15px;
+    }
+    #titelh1 {
+        display: flex;
+        justify-content: center;
+        margin-right: 0px;
+        padding-top: 2%;
+        font-size: 25px;
+    }
+    p {
+        font-size: 10px;
+        text-align: left;
+    }
+    h2 {
+        font-size: 14px;
+        text-align: center;
+    }
+    li {
+        font-size: 10px;
+        text-align: left;
+    }
+    td {
+        border: solid 2px white;
+        text-align: left;
+    }
 }
-    
-}
- 
