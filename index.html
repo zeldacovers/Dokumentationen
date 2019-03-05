@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lerndokumentation CSS</title>
     <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 
@@ -50,7 +52,7 @@
                     Informationen darstellen. Es gibt ein Paar neue Begriffe welche man zum Datenbank Modellieren kennen
                     sollte:
                 </p>
-                <table id="tabellemod">
+                <table id="tabellemod" data-aos="fade-left">
                     <tbody>
                         <tr>
                             <td class="begriff" width="353">
@@ -119,30 +121,30 @@
                         </tr>
                     </tbody>
                 </table>
-                <p style="text-align: justify;">Wichtiger Hinweis zum Begriff Relation und Tabelle:</p>
-                <p style="text-align: justify;">Heutzutage werden die Begriffe Relation und Tabelle gleichgesetzt. Das ist
+                <p style="text-align: justify;" data-aos="fade-left">Wichtiger Hinweis zum Begriff Relation und Tabelle:</p>
+                <p style="text-align: justify;" data-aos="fade-left">Heutzutage werden die Begriffe Relation und Tabelle gleichgesetzt. Das ist
                     leider sehr problematisch, da das Wort &bdquo;Relation&ldquo; im Englischen &bdquo;Beziehung&ldquo; bedeutet.
                     Eine Beziehung hat aber in den Datenbank-Grundlagen eine ganz andere Bedeutung und sagt aus, in welcher
                     Abh&auml;ngigkeit zwei Tabellen zueinanderstehen.</p>
-                <p style="text-align: justify;">Die Grundelemente einer Datenbankmodellierung bilden: Entit&auml;ten, Beziehungen
+                <p style="text-align: justify;" data-aos="fade-left">Die Grundelemente einer Datenbankmodellierung bilden: Entit&auml;ten, Beziehungen
                     und Attribute. Diese werden grafisch folgenderma&szlig;en dargestellt:</p>
-                <img src="bilder/123.jpg" alt="Modell1">
-                <p style="text-align: justify;">Um was genau es sich bei diesen Elementen handelt, kl&auml;ren die folgenden
+                <img src="bilder/123.jpg" alt="Modell1" data-aos="fade-left">
+                <p style="text-align: justify;" data-aos="fade-left">Um was genau es sich bei diesen Elementen handelt, kl&auml;ren die folgenden
                     Punkte:
                 </p>
-                <ul style="text-align: justify;">
+                <ul style="text-align: justify;" data-aos="fade-left">
                     <li>Eine Entit&auml;t ist ein individuell identifizierbares Objekt der Wirklichkeit.</li>
                     <li>Eine Beziehung ist eine Verkn&uuml;pfung / Zusammenhang zwischen zwei oder mehreren Entit&auml;ten.</li>
                     <li>Ein Attribut ist eine Eigenschaft, die im Kontext zu einer Entit&auml;t steht.</li>
                 </ul>
-                <p style="text-align: justify;">Das folgende Beispiel eines Datenbank-Modells soll zeigen, wie leicht ein
+                <p style="text-align: justify;" data-aos="fade-left">Das folgende Beispiel eines Datenbank-Modells soll zeigen, wie leicht ein
                     Modell anhand eines realen Beispiels zu erstellen ist:</p>
-                <img src="bilder/123123.jpg" alt="Modell2">
-                <p style="text-align: justify;">Erkl&auml;rung zum Datenbank-Modell: Ein Mitarbeiter hat einen Namen. Ein
+                <img src="bilder/123123.jpg" alt="Modell2" data-aos="fade-left">
+                <p style="text-align: justify;" data-aos="fade-left">Erkl&auml;rung zum Datenbank-Modell: Ein Mitarbeiter hat einen Namen. Ein
                     Projekt hat einen Namen, ein Datum und ein Budget. Ein Mitarbeiter kann mehrere Projekte leiten, aber
                     nur ein Projekt kann von genau einem Mitarbeiter geleitet werden.</p>
             </div>
-            <div class="style1">
+            <div class="style1" data-aos="fade-left">
                 <h1 style="text-align: justify;">Prim&auml;rschl&uuml;ssel (primary key)</h1>
                 <hr>
                 <p style="text-align: justify;">Der Prim&auml;rschl&uuml;ssel kommt in relationalen Datenbanken zum Einsatz
@@ -155,7 +157,7 @@
                     Als eindeutiges Prim&auml;rschl&uuml;sselattribut k&ouml;nnte beispielsweise die Sozialversicherungsnummer
                     in einer Mitarbeitertabelle verwendet werden.</p>
             </div>
-            <div class="style1">
+            <div class="style1" data-aos="fade-left">
                 <h1 style="text-align: justify;">Fremdschl&uuml;ssel (Foreign Key)</h1>
                 <hr>
                 <p style="text-align: justify;">Der Fremdschl&uuml;ssel kann Bestandteil einer Tabelle in einer relationalen
@@ -176,7 +178,7 @@
                     kann bei einer Abfrage die Anschrift und andere Fakten zum Unternehmen aus der Tabelle &bdquo;Unternehmen&ldquo;
                     abgerufen werden.</p>
             </div>
-            <div class="style1">
+            <div class="style1" data-aos="fade-left">
                 <h1 style="text-align: justify;">Normalisierung von Datenbanken.</h1>
                 <hr>
                 <p style="text-align: justify;">Unter Normalisierung eines relationalen Datenbankmodells versteht man die
@@ -198,7 +200,7 @@
                 </ul>
             </div>
 
-            <div class="style1">
+            <div class="style1" data-aos="fade-left">
                 <h1 style="text-align: justify;">DDL (Data Definition Language)</h1>
                 <hr>
                 <p style="text-align: justify;">Die Structured Query Language (SQL) zerf&auml;llt grob in zwei Teile:</p>
@@ -213,7 +215,7 @@
                     <li>In dieser Sprache werden die 3 Befehle, Create Alter und Drop verwendet.</li>
                 </ul>
                 <p>Hier ein Paar Befehle und Ihre Beschreibung:</p>
-                <table>
+                <table data-aos="fade-left">
                     <tbody>
                         <tr>
                             <td class="begriff" width="344">
@@ -231,7 +233,7 @@
                                 <p class="herv">,[FIRTYP] INT NOT NULL);</p>
                             </td>
                             <td width="345">
-                                <p>Dieser Befehl wird genutzt um eine Tabelle zu erstellen. Dazu benutzen wir den Befehl
+                                <p >Dieser Befehl wird genutzt um eine Tabelle zu erstellen. Dazu benutzen wir den Befehl
                                     &laquo;Create&raquo;. &nbsp;Dabei muss man eine neue Tabelle benennen, in unserem Fall
                                     jetzt FIRMA, danach werden die Attribute Einzel angegeben und die dazu passenden Datentypen
                                     vergeben.
@@ -260,7 +262,7 @@
                     </tbody>
                 </table>
             </div>
-            <div class="style1">
+            <div class="style1" data-aos="fade-left">
                 <h1>DCL (Data Control Language)</h1>
                 <hr>
                 <p>Die Data Control Language ist daf&uuml;r zust&auml;ndig Rechte zu vergeben oder sie zu entziehen dabei
@@ -278,7 +280,7 @@
                 <p class="herv">GRANT ALL PRIVILEGES ON FIRMA. * TO 'Colin'@'localhost';</p>
                 <p>Nun hat der USER Colin alle Berechtigungen f&uuml;r die Tabelle, jedoch wollen wir Vielleicht nicht, dass
                     der USER Colin alle Berechtigungen hat. Es gibt n&auml;mlich noch weitere Berechtigungs-Typen:</p>
-                <ul>
+                <ul data-aos="fade-left">
                     <li>CREATE: Erlaubt dem Benutzer, neue Datenbanken zu erstellen.</li>
                     <li>DROP: Erlaubt einem Benutzer, Datenbanken zu L&ouml;schen.</li>
                     <li>DELETE: Erlaubt einem Benutzer, einzelne Zeilen in einer Tabelle zu l&ouml;schen.</li>
@@ -287,15 +289,15 @@
                     <li>UPGRADE: Erlaubnis, eine Zeile zu aktualisieren</li>
                     <li>GRANT OPTION: Erlaubt einen Benutzer weitere Benutzer zu erstellen oder zu l&ouml;schen.</li>
                 </ul>
-                <p>Zum Schluss werden wir alle &Auml;nderungen mit dem Befehl FLUSH speichern:</p>
-                <p class="herv">FLUSH PRIVILEGES;</p>
-                <p>Widmen wir uns also noch dem letzten Befehl dieser Sprachschicht n&auml;mlich REVOKE. Denn REVOKE wird
+                <p data-aos="fade-left"Zum Schluss werden wir alle &Auml;nderungen mit dem Befehl FLUSH speichern:</p>
+                <p class="herv" data-aos="fade-left">FLUSH PRIVILEGES;</p>
+                <p data-aos="fade-left">Widmen wir uns also noch dem letzten Befehl dieser Sprachschicht n&auml;mlich REVOKE. Denn REVOKE wird
                     verwendet um, Berechtigungen von Benutzerkonten zu entfernen. Also werde ich wieder alle Rechte vom USER
                     Colin entziehen.</p>
-                <p class="herv">REVOKE ALL PRIVILEGES ON FIRMA. * FROM 'Colin'@'localhost';</p>
-                <p class="herv">FLUSH PRIVILEGES;</p>
+                <p class="herv" data-aos="fade-left">REVOKE ALL PRIVILEGES ON FIRMA. * FROM 'Colin'@'localhost';</p>
+                <p class="herv" data-aos="fade-left">FLUSH PRIVILEGES;</p>
             </div>
-            <div class="style1">
+            <div class="style1" data-aos="fade-left">
                 <h1>DML (Data Manipulation Language)</h1>
                 <hr>
                 <p>Unsere Tabellen sind angelegt und warten darauf, mit Daten gef&uuml;ttert bzw. durchsucht zu werden. Lernen
@@ -316,3 +318,13 @@
 </body>
 
 </html>
+<style type="text/css">
+
+</style>
+<script type="text/javascript">
+ AOS.init({
+     duration : 1200,
+ })
+
+
+</script>
