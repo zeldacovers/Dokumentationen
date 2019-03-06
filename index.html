@@ -546,7 +546,7 @@
                     Basis ihrer Inputvariable zur&uuml;ck. Alle SQL Funktionen k&ouml;nnen sowohl in der Datenbanksprache
                     T-SQL von Microsoft als auch in der Datenbanksprache PL/SQL von ORACLEverwendet werden und z&auml;hlen
                     damit zu den grundlegenden SQL Funktionen. Da es mehrere Funktionen gibt, verweise ich auf diese <a href="http://www.datenbanken-verstehen.de/sql-funktionen/"
-                        class="link" target="_blank" >Seite</a>
+                        class="link" target="_blank">Seite</a>
                     hier, denn dort wird jede Funktion super erkl&auml;rt. Unten finden sie noch die Operatoren welche bei Funktionen gebraucht
                     werden.
                 </p>
@@ -635,22 +635,43 @@
                     nur JOIN als JOIN-Typ geschrieben wird. Hierbei wird die Schnittmenge der beiden selektierten Tabellen
                     ausgegeben, welche der unteren WHERE Bedingung entsprechen.</p>
                 <img class="innerjoin" src="https://janikwibilea.github.io/lerndoku_105/images/inner%20join%20kreis.PNG" alt="png">
-                <p data-aos="fade-left">In diesem Beispiel werden die Produkte ausgegeben, welche noch nie bestellt wurden. Um einen solchen JOIN
-                    zu erstellen müssen wir die Tabelle "products" und "orders" miteinander verknüpfen. Da wir nur die Produkte
-                    ausgeben möchten die noch nie bestellt wurden eignet sich ein LEFT INNER JOIN am besten. Der nächste
-                    Schritt ist es zu bestimmen auf (ON) welchen Spalten sie sich gegenseitig joinen sollen, in diesem Fall
-                    ist p.id als PRIMARY KEY und orders.product_id als FOREIGN KEY bestimmt. Am Schluss setzt man die Bedingung
-                    mit WHERE welche bestimmt das die Spalte orders.id leer sein muss.</p>
-                <img class="innerjoin" src="https://janikwibilea.github.io/lerndoku_105/images/left%20inner%20join%20kreis.PNG" alt="png" data-aos="fade-left">
-                <p data-aos="fade-left">Der LEFT bzw. RIGHT OUTER JOIN ist bis auf die fehlende WHERE Bedingung gleich aufgebaut wie der LEFT/RIGHT
-                    INNER JOIN. </p>
+                <p data-aos="fade-left">In diesem Beispiel werden die Produkte ausgegeben, welche noch nie bestellt wurden.
+                    Um einen solchen JOIN zu erstellen müssen wir die Tabelle "products" und "orders" miteinander verknüpfen.
+                    Da wir nur die Produkte ausgeben möchten die noch nie bestellt wurden eignet sich ein LEFT INNER JOIN
+                    am besten. Der nächste Schritt ist es zu bestimmen auf (ON) welchen Spalten sie sich gegenseitig joinen
+                    sollen, in diesem Fall ist p.id als PRIMARY KEY und orders.product_id als FOREIGN KEY bestimmt. Am Schluss
+                    setzt man die Bedingung mit WHERE welche bestimmt das die Spalte orders.id leer sein muss.</p>
+                <img class="innerjoin" src="https://janikwibilea.github.io/lerndoku_105/images/left%20inner%20join%20kreis.PNG" alt="png"
+                    data-aos="fade-left">
+                <p data-aos="fade-left">Der LEFT bzw. RIGHT OUTER JOIN ist bis auf die fehlende WHERE Bedingung gleich aufgebaut
+                    wie der LEFT/RIGHT INNER JOIN. </p>
                 <img class="innerjoin" src="https://janikwibilea.github.io/lerndoku_105/images/left%20join%20kreis.PNG" alt="png" data-aos="fade-left">
-                <p data-aos="fade-left">Der FULL OUTER JOIN wird nur in den seltensten Fällen verwendet, weil er alle Datensätze ausgibt die zwischen
-                    den beiden verknüpften Tabellen gleich. Dies führt dazu das oftmals extrem viele Datensätze augegeben
-                    werden.</p>
-                    <img class="innerjoin" src="https://janikwibilea.github.io/lerndoku_105/images/full%20auter%20join.PNG" alt="png" data-aos="fade-left">
+                <p data-aos="fade-left">Der FULL OUTER JOIN wird nur in den seltensten Fällen verwendet, weil er alle Datensätze
+                    ausgibt die zwischen den beiden verknüpften Tabellen gleich. Dies führt dazu das oftmals extrem viele
+                    Datensätze augegeben werden.
+                </p>
+                <img class="innerjoin" src="https://janikwibilea.github.io/lerndoku_105/images/full%20auter%20join.PNG" alt="png" data-aos="fade-left">
             </div>
-            
+            <div class="style1" data-aos="fade-left">
+                <h1>Daten Imoprtieren/Exportieren</h1>
+                <hr>
+                <p>Es kann von Vorteil sein, wenn Sie ihre Datenbank exportieren und so ein Backup haben, falls ihre Daten
+                    verloren gehen. Sie können Daten in eine externe Datei speichern, indem sie alle Daten mit SELECT auswählen
+                    und am Schluss into outfile 'Pfad' schreiben, so werden die Daten in diese Datei abgespeichert. Tabellen
+                    können Sie mit dem Befehl LOAD DATA LOCAL INFILE 'Pfad' INTO Tabelle FIELDS TERMINATED BY ';'. Das Zeichen
+                    in den Apostrophen kann je nach Anwendung variieren, deshalb würde ich empfehlen, die Datei vorher zu
+                    öffnen und nachzusehen. Wenn Sie eine ganze Datenbank, wie northwind, importieren wollen, können sie
+                    dies nicht in MYSQL machen. Sie müssen ins Terminal gehen und mit dem Befehl mysql -p -u root >Pfad können
+                    Sie jetzt die ganze Datenbank importieren.</p>
+            </div>
+            <div class="style1">
+                <h1>Northwind Datenbank</h1>
+                <hr>
+                <p> In diesem ÜK haben wir des öfteren die Nortwind Datenbank Benutzt. klicke <a class="link" href="bilder/northwind.zip">Hier</a> um die Northwind Datenbank
+                    zu downloaden. Unten sehen sie noch das Datenbank-Modell der Northwind.
+                </p>
+            </div>
+
 
         </main>
     </div>
