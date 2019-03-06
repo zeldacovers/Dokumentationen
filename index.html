@@ -310,7 +310,234 @@
                 <p class="herv">INSERT INTO t_admin (adm_user, adm_pass) VALUES ('Meister', 'geheim');</p>
                 <p>Die Zuordnung, welcher Wert in welche Spalte eingef&uuml;gt wird, geschieht &uuml;ber die jeweiligen Positionen
                     innerhalb der Klammern; der erste Wert "`Meister"' wird in die erste Spalte "`adm_user"' eingef&uuml;gt.</p>
-
+                <p data-aos="fade-left">Widmen wir uns noch einen weiteren wichtigen Befehl der DML, n&auml;mlich dem Befehl
+                    UPDATE. Mit UPDATE k&ouml;nnen Datens&auml;tze ge&auml;ndert werden, im SET-Teil wird der neue Wert eingetragen.
+                    Es sollte unbedingt auf den WHERE-Teil geachtet werden, sonst werden alle Werte &uuml;berschrieben. Die
+                    Syntax sieht folgendermassen aus:</p>
+                <p class="herv" data-aos="fade-left">UPDATE (Tabellenamen) SET (Attribut)= &rsquo;hallo&rsquo; WHERE x=0;</p>
+                <p data-aos="fade-left">Mit DELETE k&ouml;nnen Datens&auml;tze gel&ouml;scht werden, hierbei muss aber auf
+                    die WHERE-Bedingungen achten, Definition ansonsten werden alle Datens&auml;tze gel&ouml;scht. Dies ist
+                    im ersten Beispiel gemacht.</p>
+                <p class="herv" data-aos="fade-left">DELETE FROM (Tabellenamen) ;</p>
+                <p class="herv" data-aos="fade-left">DELETE FROM (Tabellenamen) WHERE x=0;</p>
+                <p class="herv" data-aos="fade-left">DELETE FROM (Tabellennamen) VALUES (&lsquo;1&rsquo; &lsquo;2&rsquo;)
+                    WHERE x=0;</p>
+            </div>
+            <div class="style1" data-aos="fade-left">
+                <h1>DQL (Data Query Language)</h1>
+                <hr>
+                <p>Die DQL ist die wichtigste Sprachschicht, denn alle Abfragen und Ausgaben werden mithilfe dieser Schicht
+                    gemacht. Die Abfrage funktioniert mit sogenannten Query's, welche immer aus dem SELECT-Befehl bestehen.
+                    Der SELECT-Befehl ist auch der einzige in der DQL. Die Query's werden dann an den Server geschickt und
+                    dieser gibt dann die gew&uuml;nschten Daten aus, dies ist aber in vielen Situationen nicht so einfach
+                    wie es klingt. Der SELECT-Befehl ist immer gefolgt von einem oder mehreren Attributen einer oder mehrerer
+                    Entitit&auml;ten. Mit FROM wird dem Server mitgeteilt, von welchen Tabellen die Attribute stammen. Gefolgt
+                    wird das FROM von einer oder mehreren WHERE-Bedingungen. Jetzt kann diese Abfrage noch mit einem GROUP
+                    BY erg&auml;nzt werden, um die Daten zu b&uuml;ndeln. Wenn jetzt noch eine Bedingung ansteht, kann diese
+                    durch ein HAVING erg&auml;nzt werden. Jetzt kann dieses Query nocht mit einem ORDER BY verst&auml;rkt
+                    werden, damit diese Ausgabe noch sortiert wird. Ist eine absteigende Sortierung gefragt, kann das ORDER
+                    BY noch durch ein DESC unterst&uuml;tzt werden. &Uuml;brigens, Query bedeutet Abfrage und kann jedes
+                    Geschlecht der deutschen Sprache annehmen. Hier die Syntax:</p>
+                <p class="herv">SELECT (Attribut) FROM (Tabelle) WHERE x=0 GROUP BY (Attribut) HAVING x=1 ORDER BY (Attribut)
+                    DESC;
+                </p>
+            </div>
+            <div class="style1" data-aos="fade-left">
+                <h1>Datentypen</h1>
+                <hr>
+                <p>Ein Datentyp beschreibt, wie der Inhalt einer Variable aussieht, in diesem Fall wie der Inhalt eines Attributes
+                    geschrieben werden muss. Es gibt viele Datentypen, sei es f&uuml;r Zahlen, Strings und Daten wie zum
+                    Beispiel f&uuml;r das Datum 12.08.2007. Kurze Nebenbemerkung: jeder Buchstabe ist ein Byte gross. Hier
+                    sind die wichtigsten Datentypen aufgelistet:</p>
+                <table id="mysql" border="0" width="600" cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr class="row_h">
+                            <td class="begriff">
+                                <h2>Datentyp</h2>
+                            </td>
+                            <td class="begriff">
+                                <h2>Speicherplatz</h2>
+                            </td>
+                            <td class="begriff">
+                                <h2>Optionen</h2>
+                            </td>
+                            <td class="begriff">
+                                <h2>Beschreibung</h2>
+                            </td>
+                        </tr>
+                        <tr class="row_1">
+                            <td>TINYINT</td>
+                            <td>1&nbsp;Byte</td>
+                            <td>&nbsp;&nbsp;[(<span class="help" title="maximale Anzahl der gezeigten Stellen">M</span>)]&nbsp;[<span
+                                    class="help" title="UNSIGNED (Zahl ohne Vorzeichen)">U</span>]&nbsp;[<span class="help" title="Zerofill">Z</span>]&nbsp;&nbsp;</td>
+                            <td>Ganzzahlen von 0 bis 255 oder von -128 bis 127.</td>
+                        </tr>
+                        <tr class="row_2">
+                            <td>SMALLINT</td>
+                            <td>2&nbsp;Bytes</td>
+                            <td>&nbsp;&nbsp;[(<span class="help" title="maximale Anzahl der gezeigten Stellen">M</span>)]&nbsp;[<span
+                                    class="help" title="UNSIGNED (Zahl ohne Vorzeichen)">U</span>]&nbsp;[<span class="help" title="Zerofill">Z</span>]&nbsp;&nbsp;</td>
+                            <td>Ganzzahlen von 0 bis 65.535 oder von -32.768 bis 32.767.</td>
+                        </tr>
+                        <tr class="row_1">
+                            <td>MEDIUMINT</td>
+                            <td>3&nbsp;Bytes</td>
+                            <td>&nbsp;&nbsp;[(<span class="help" title="maximale Anzahl der gezeigten Stellen">M</span>)]&nbsp;[<span
+                                    class="help" title="UNSIGNED (Zahl ohne Vorzeichen)">U</span>]&nbsp;[<span class="help" title="Zerofill">Z</span>]&nbsp;&nbsp;</td>
+                            <td>Ganzzahlen von 0 bis 16.777.215 oder von -8.388.608 bis 8.388.607.</td>
+                        </tr>
+                        <tr class="row_2">
+                            <td>INT</td>
+                            <td>4&nbsp;Bytes</td>
+                            <td>&nbsp;&nbsp;[(<span class="help" title="maximale Anzahl der gezeigten Stellen">M</span>)]&nbsp;[<span
+                                    class="help" title="UNSIGNED (Zahl ohne Vorzeichen)">U</span>]&nbsp;[<span class="help" title="Zerofill">Z</span>]&nbsp;&nbsp;</td>
+                            <td>Ganzzahlen von 0 bis ~4,3 Mill. oder von -2.147.483.648 bis 2.147.483.647.</td>
+                        </tr>
+                        <tr class="row_1">
+                            <td>INTEGER</td>
+                            <td>4&nbsp;Bytes</td>
+                            <td>&nbsp;&nbsp;[(<span class="help" title="maximale Anzahl der gezeigten Stellen">M</span>)]&nbsp;[<span
+                                    class="help" title="UNSIGNED (Zahl ohne Vorzeichen)">U</span>]&nbsp;[<span class="help" title="Zerofill">Z</span>]&nbsp;&nbsp;</td>
+                            <td>Alias f&uuml;r INT.</td>
+                        </tr>
+                        <tr class="row_2">
+                            <td>BIGINT</td>
+                            <td>8&nbsp;Bytes</td>
+                            <td>&nbsp;&nbsp;[(<span class="help" title="maximale Anzahl der gezeigten Stellen">M</span>)]&nbsp;[<span
+                                    class="help" title="UNSIGNED (Zahl ohne Vorzeichen)">U</span>]&nbsp;[<span class="help" title="Zerofill">Z</span>]&nbsp;&nbsp;</td>
+                            <td>Ganzzahlen von 0 bis 2^64-1 oder von -(2^63) bis (2^63)-1.</td>
+                        </tr>
+                        <tr class="row_1">
+                            <td>FLOAT</td>
+                            <td>4&nbsp;Bytes</td>
+                            <td>&nbsp;&nbsp;[(<span class="help" title="maximale Anzahl der gezeigten Stellen">M</span>,<span
+                                    class="help" title="Anzahl der Kommastellen bei einer Dezimalzahl">D</span>)]&nbsp;[<span
+                                    class="help" title="UNSIGNED (Zahl ohne Vorzeichen)">U</span>]&nbsp;[<span class="help" title="Zerofill">Z</span>]&nbsp;&nbsp;</td>
+                            <td>Flie&szlig;kommazahl mit Vorzeichen. Wertebereich von -(3,402823466&times;10<sup>38</sup>)
+                                bis -(1,175494351&times;10<sup>-38</sup>), 0 und 1,175494351&times;10<sup>-38</sup>&nbsp;bis
+                                3,402823466&times;10
+                                <sup>38</sup>.</td>
+                        </tr>
+                        <tr class="row_2">
+                            <td>DOUBLE</td>
+                            <td>8&nbsp;Bytes</td>
+                            <td>&nbsp;&nbsp;[(<span class="help" title="maximale Anzahl der gezeigten Stellen">M</span>,<span
+                                    class="help" title="Anzahl der Kommastellen bei einer Dezimalzahl">D</span>)]&nbsp;[<span
+                                    class="help" title="UNSIGNED (Zahl ohne Vorzeichen)">U</span>]&nbsp;[<span class="help" title="Zerofill">Z</span>]&nbsp;&nbsp;</td>
+                            <td>Flie&szlig;kommazahl mit Vorzeichen. Wertebereich von -(1,79769&times;10<sup>308</sup>) bis
+                                -(2.22507&times;10
+                                <sup>-308</sup>), 0 und 2.22507&times;10<sup>-308</sup>bis 1,79769&times;10<sup>308</sup></td>
+                        </tr>
+                        <tr class="row_1">
+                            <td>REAL</td>
+                            <td>8&nbsp;Bytes</td>
+                            <td>&nbsp;&nbsp;[(<span class="help" title="maximale Anzahl der gezeigten Stellen">M</span>,<span
+                                    class="help" title="Anzahl der Kommastellen bei einer Dezimalzahl">D</span>)]&nbsp;[<span
+                                    class="help" title="UNSIGNED (Zahl ohne Vorzeichen)">U</span>]&nbsp;[<span class="help" title="Zerofill">Z</span>]&nbsp;&nbsp;</td>
+                            <td>Alias f&uuml;r DOUBLE.</td>
+                        </tr>
+                        <tr class="row_2">
+                            <td>DECIMAL</td>
+                            <td>M+x&nbsp;Bytes</td>
+                            <td>&nbsp;&nbsp;[(<span class="help" title="maximale Anzahl der gezeigten Stellen">M</span>,<span
+                                    class="help" title="Anzahl der Kommastellen bei einer Dezimalzahl">D</span>)]&nbsp;[<span
+                                    class="help" title="UNSIGNED (Zahl ohne Vorzeichen)">U</span>]&nbsp;[<span class="help" title="Zerofill">Z</span>]&nbsp;&nbsp;</td>
+                            <td>Flie&szlig;kommazahl mit Vorzeichen. Speicherbedarf: x=1 wenn D=0, sonst x=2. Ab MySQL 5.1
+                                bin&auml;r gespeichert, zuvor als String.</td>
+                        </tr>
+                        <tr class="row_1">
+                            <td>NUMERIC</td>
+                            <td>M+x&nbsp;Bytes</td>
+                            <td>&nbsp;&nbsp;[(<span class="help" title="maximale Anzahl der gezeigten Stellen">M</span>,<span
+                                    class="help" title="Anzahl der Kommastellen bei einer Dezimalzahl">D</span>)]&nbsp;[<span
+                                    class="help" title="UNSIGNED (Zahl ohne Vorzeichen)">U</span>]&nbsp;[<span class="help" title="Zerofill">Z</span>]&nbsp;&nbsp;</td>
+                            <td>Alias f&uuml;r DECIMAL.</td>
+                        </tr>
+                        <tr class="row_2">
+                            <td>DATE</td>
+                            <td>3&nbsp;Bytes</td>
+                            <td>&nbsp;&nbsp;-&nbsp;&nbsp;</td>
+                            <td>Datum im Format 'YYYY-MM-DD'. Wertebereich von 01.01.1000 bis 31.12.9999.</td>
+                        </tr>
+                        <tr class="row_1">
+                            <td>DATETIME</td>
+                            <td>8&nbsp;Bytes</td>
+                            <td>&nbsp;&nbsp;-&nbsp;&nbsp;</td>
+                            <td>Datumsangabe im Format 'YYYY-MM-DD hh:mm:ss'. Wertebereich entspricht DATE.</td>
+                        </tr>
+                        <tr class="row_2">
+                            <td>TIMESTAMP</td>
+                            <td>4&nbsp;Bytes</td>
+                            <td>&nbsp;&nbsp;-&nbsp;&nbsp;</td>
+                            <td>Zeitstempel. Wertebereich: 1.1.1970 bis 19.01.2038. Das Format variiert in den MySQL-Versionen.</td>
+                        </tr>
+                        <tr class="row_1">
+                            <td>TIME</td>
+                            <td>3&nbsp;Bytes</td>
+                            <td>&nbsp;&nbsp;-&nbsp;&nbsp;</td>
+                            <td>Zeit zwischen -838:59:59 und 839:59:59. Ausgabe: hh:mm:ss.</td>
+                        </tr>
+                        <tr class="row_2">
+                            <td>YEAR</td>
+                            <td>1&nbsp;Byte</td>
+                            <td>&nbsp;&nbsp;[(2|4)]&nbsp;&nbsp;</td>
+                            <td>Jahr zwischen 1901 bis 2155 bei (4) und zwischen 1970 bis 2069 bei (2).</td>
+                        </tr>
+                        <tr class="row_1">
+                            <td>CHAR</td>
+                            <td>M&nbsp;Byte(s)</td>
+                            <td>&nbsp;&nbsp;(<span class="help" title="maximale Anzahl der gezeigten Stellen">M</span>)&nbsp;[<span
+                                    class="help" title="Attribut f&uuml;r die Sortierung">BINARY</span>]&nbsp;&nbsp;</td>
+                            <td>Zeichenkette fester L&auml;nge M. Wertebereich f&uuml;r M: 0 bis 255.</td>
+                        </tr>
+                        <tr class="row_2">
+                            <td>VARCHAR</td>
+                            <td>L+1&nbsp;Bytes</td>
+                            <td>&nbsp;&nbsp;(<span class="help" title="maximale Anzahl der gezeigten Stellen">M</span>)&nbsp;[<span
+                                    class="help" title="Attribut f&uuml;r die Sortierung">BINARY</span>]&nbsp;&nbsp;</td>
+                            <td>Zeichenkette variabler L&auml;nge, Maximum ist M. Wertebereich f&uuml;r M: 0 bis 255.</td>
+                        </tr>
+                        <tr class="row_1">
+                            <td>BINARY</td>
+                            <td>M&nbsp;Bytes</td>
+                            <td>&nbsp;&nbsp;(<span class="help" title="maximale Anzahl der gezeigten Stellen">M</span>)&nbsp;&nbsp;</td>
+                            <td>Zum Speichern bin&auml;rer Strings, unabh&auml;ngig vom Zeichensatz. Wertebereich f&uuml;r
+                                M: 0 bis 255. Weiterer Typ: VARBINARY</td>
+                        </tr>
+                        <tr class="row_2">
+                            <td>BLOB</td>
+                            <td>L+2&nbsp;Bytes</td>
+                            <td>&nbsp;&nbsp;(<span class="help" title="maximale Anzahl der gezeigten Stellen">M</span>)&nbsp;&nbsp;</td>
+                            <td>Bin&auml;res Objekt mit variablen Daten. Weitere Typen: TINYBLOB, MEDIUMBLOB und LONGBLOB.
+                                M ist ab Version 4.1 definierbar.</td>
+                        </tr>
+                        <tr class="row_1">
+                            <td>TEXT</td>
+                            <td>L+2&nbsp;Bytes</td>
+                            <td>&nbsp;&nbsp;(<span class="help" title="maximale Anzahl der gezeigten Stellen">M</span>)&nbsp;&nbsp;</td>
+                            <td>Wie BLOB. Ignoriert beim Sortieren &amp; Vergleichen Gro&szlig;- und Kleinschreibung. Weitere
+                                Typen: TINYTEXT, MEDIUMTEXT, LONGTEXT. M ist ab Version 4.1 definierbar.</td>
+                        </tr>
+                        <tr class="row_2">
+                            <td>ENUM</td>
+                            <td>1&nbsp;oder&nbsp;2&nbsp;Bytes</td>
+                            <td>&nbsp;&nbsp;('val1',&nbsp;'val2',&nbsp;...)&nbsp;&nbsp;</td>
+                            <td>Liste von Werten (val1, val2, ...). 65.535 eineindeutige Elemente sind maximal m&ouml;glich.</td>
+                        </tr>
+                        <tr class="row_1">
+                            <td>SET</td>
+                            <td>x&nbsp;Bytes</td>
+                            <td>&nbsp;&nbsp;('val1',&nbsp;'val2',&nbsp;...)&nbsp;&nbsp;</td>
+                            <td>String-Objekt mit verschiedenen Variablen. 64 sind maximal m&ouml;glich. Speicherbedarf:
+                                x ist 1, 2, 3, 4 oder 8.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="style1">
+                <h1>Funktionen und Operationen</h1>
+                <hr>
+                
             </div>
 
         </main>

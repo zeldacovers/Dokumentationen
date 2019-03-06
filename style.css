@@ -162,6 +162,9 @@ img {
     color: #00ff68;
     margin-top: -1%;
 }
+#mysql{
+    width: 100%;
+}
 
 @media screen and (max-width: 769px) {
     #titelbild {
@@ -209,5 +212,6 @@ img {
     td {
         border: solid 2px white;
         text-align: left;
+        font-size: 10px;
     }
 }
