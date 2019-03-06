@@ -179,7 +179,7 @@
                     abgerufen werden.</p>
             </div>
             <div class="style1" data-aos="fade-left">
-                <h1 style="text-align: justify;">Normalisierung von Datenbanken.</h1>
+                <h1 style="text-align: justify;">Normalisierung von Datenbanken</h1>
                 <hr>
                 <p style="text-align: justify;">Unter Normalisierung eines relationalen Datenbankmodells versteht man die
                     Aufteilung von Attributen in mehrere Relationen (Tabellen) mithilfe der Normalisierungsregeln und deren
@@ -534,10 +534,121 @@
                     </tbody>
                 </table>
             </div>
-            <div class="style1">
-                <h1>Funktionen und Operationen</h1>
+            <div class="style1" data-aos="fade-left">
+                <h1>Funktionen und Operatoren</h1>
                 <hr>
-                
+                <p>&nbsp;Mit SQL Funktionen k&ouml;nnen bestimmte Werte einer Spalte berechnet oder bestimmte Werte mittels
+                    der SQL Funktionen im Nachhinein manipuliert werden.</p>
+                <p><em>&bdquo;Welche SQL Funktionen gibt es?&ldquo;</em></p>
+                <p>Es existieren zwei Arten von SQL Funktionen: SQL Aggregat Funktionen und SQL Skalar Funktionen. Mit SQL
+                    Aggregat Funktionen, wie z.B. SUM() oder AVG(), k&ouml;nnen Tabellenspalten auf ihre Werte zusammengefasst
+                    und berechnet werden. Mit SQL Skalar Funktionen, wie z.B. LEN() oder Round(), liefern Einzelwerte auf
+                    Basis ihrer Inputvariable zur&uuml;ck. Alle SQL Funktionen k&ouml;nnen sowohl in der Datenbanksprache
+                    T-SQL von Microsoft als auch in der Datenbanksprache PL/SQL von ORACLEverwendet werden und z&auml;hlen
+                    damit zu den grundlegenden SQL Funktionen. Da es mehrere Funktionen gibt, verweise ich auf diese <a href="http://www.datenbanken-verstehen.de/sql-funktionen/"
+                        class="link">Seite</a>
+                    hier, denn dort wird jede Funktion super erkl&auml;rt. Unten finden sie noch die Operatoren welche bei Funktionen gebraucht
+                    werden.
+                </p>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="begriff">
+                                <h2><strong>Operator</strong></h2>
+                            </td>
+                            <td class="begriff">
+                                <h2><strong>Erl&auml;uterung</strong></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>&gt;&nbsp;</p>
+                            </td>
+                            <td>
+                                <p>Gr&ouml;&szlig;er als (geht auch mit gr&ouml;&szlig;er-gleich, also&nbsp;&gt;=)</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>&lt;&nbsp;</p>
+                            </td>
+                            <td>
+                                <p>Kleiner als (geht auch mit kleiner-gleich, also&nbsp;&lt;=)</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>=</p>
+                            </td>
+                            <td>
+                                <p>Gleich</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>!=</p>
+                            </td>
+                            <td>
+                                <p>Ungleich</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>BETWEEN</p>
+                            </td>
+                            <td>
+                                <p>Ermittelt Minimal- und Maximalwert</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>LIKE</p>
+                            </td>
+                            <td>
+                                <p>Zeichenkettenvergleich</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>IN</p>
+                            </td>
+                            <td>
+                                <p>Array-Vergleich ( analog zu&nbsp;in_array&nbsp;von PHP)</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="style1" data-aos="fade-left">
+                <h1>Joins</h1>
+                <hr>
+                <p>Mit einem Join lassen sich Werte aus mehreren SQL Tabellen kombinieren. Statt nun mehrere SELECT Abfragen
+                    an verschiedenen Tabellen vorzunehmen, kann man einen einzelnen SQL Befehl eingeben um mehrere Tabellen
+                    gleichzeitig abzufragen. Damit ein solcher JOIN funktioniert m&uuml;ssen die Tabellen, welche verkn&uuml;pft
+                    werden, &uuml;ber eine gemeinsame Spalte mittels Foreign Key und Primary Key verbunden werden. In MySQL
+                    stehen insgesamt vier verschiedene JOIN-Typen zur Verf&uuml;gung, und zwar der INNER JOIN, LEFT JOIN,
+                    RIGHT JOIN und der FULL JOIN. Der Syntax eines solchen JOINs sieht wie folgt aus:</p>
+                <p class="herv">
+                    Select * From tabelle1 JOIN tabelle2 ON tabelle1.PK = tabelle2.FK JOIN tabelle3 ON tabelle1.PK = tabelle3.FK WHERE bedingung;
+                </p>
+                <p>Der Syntax des INNER JOINS ist gleich dem des LEFT INNER JOINS, nur dass anstelle von LEFT INNER JOIN
+                    nur JOIN als JOIN-Typ geschrieben wird. Hierbei wird die Schnittmenge der beiden selektierten Tabellen
+                    ausgegeben, welche der unteren WHERE Bedingung entsprechen.</p>
+                <img class="innerjoin" src="https://janikwibilea.github.io/lerndoku_105/images/inner%20join%20kreis.PNG" alt="png">
+                <p data-aos="fade-left">In diesem Beispiel werden die Produkte ausgegeben, welche noch nie bestellt wurden. Um einen solchen JOIN
+                    zu erstellen müssen wir die Tabelle "products" und "orders" miteinander verknüpfen. Da wir nur die Produkte
+                    ausgeben möchten die noch nie bestellt wurden eignet sich ein LEFT INNER JOIN am besten. Der nächste
+                    Schritt ist es zu bestimmen auf (ON) welchen Spalten sie sich gegenseitig joinen sollen, in diesem Fall
+                    ist p.id als PRIMARY KEY und orders.product_id als FOREIGN KEY bestimmt. Am Schluss setzt man die Bedingung
+                    mit WHERE welche bestimmt das die Spalte orders.id leer sein muss.</p>
+                <img class="innerjoin" src="https://janikwibilea.github.io/lerndoku_105/images/left%20inner%20join%20kreis.PNG" alt="png" data-aos="fade-left">
+                <p data-aos="fade-left">Der LEFT bzw. RIGHT OUTER JOIN ist bis auf die fehlende WHERE Bedingung gleich aufgebaut wie der LEFT/RIGHT
+                    INNER JOIN. </p>
+                <img class="innerjoin" src="https://janikwibilea.github.io/lerndoku_105/images/left%20join%20kreis.PNG" alt="png" data-aos="fade-left">
+                <p data-aos="fade-left">Der FULL OUTER JOIN wird nur in den seltensten Fällen verwendet, weil er alle Datensätze ausgibt die zwischen
+                    den beiden verknüpften Tabellen gleich. Dies führt dazu das oftmals extrem viele Datensätze augegeben
+                    werden.</p>
+                    <img class="innerjoin" src="https://janikwibilea.github.io/lerndoku_105/images/full%20auter%20join.PNG" alt="png" data-aos="fade-left">
             </div>
 
         </main>
