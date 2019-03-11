@@ -186,7 +186,26 @@ img {
 .innerjoin{
     width: 30%;
 }
-
+select{
+    position: fixed;
+    z-index: 4;
+    margin: -2% 0% 0% 87%;
+    width: 10%;
+    font-size: 90%;
+    background-color: #04aeda;
+    list-style-type: none;
+    text-decoration-line: none;
+    border: none;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    padding: 0.25%;
+    border-radius: 25px;
+}
+option{
+    background-color: #001429;
+    color: white;
+    margin: 0% 0% 0% 0%;
+    font-size: 80%;
+}
 @media screen and (max-width: 769px) {
 
     #index {
