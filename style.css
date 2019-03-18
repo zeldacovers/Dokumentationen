@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Gugi|Ubuntu');
 html {
     scroll-behavior: smooth;
     font-family: 'Ubuntu', sans-serif;
@@ -209,7 +209,8 @@ img {
     flex-direction: column;
     margin: 0.25% 0%;
 }
-.dropdown-content :hover{
+
+.dropdown-content :hover {
     border-radius: 12px;
     box-shadow: 1px 1px 5px 0px rgba(154, 166, 175, 0.7);
 }
