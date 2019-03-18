@@ -207,12 +207,11 @@ img {
 .dropdown-content {
     display: flex;
     flex-direction: column;
-    margin: 2% 0%;
+    margin: 0.25% 0%;
 }
 .dropdown-content :hover{
-    background-color: #04add9;
     border-radius: 12px;
-    box-shadow: 5px 5px 5px 0px rgba(154, 166, 175, 0.7);
+    box-shadow: 1px 1px 5px 0px rgba(154, 166, 175, 0.7);
 }
 
 .dropdowna {
@@ -225,7 +224,7 @@ img {
     margin: 3% 33% 0% 1%;
     padding: 1%;
     font-size: 200%;
-    background-color: #04add9;
+    background-color: #bb1524;
     border-radius: 12px;
     box-shadow: 5px 5px 5px 0px rgba(154, 166, 175, 0.7);
 }
